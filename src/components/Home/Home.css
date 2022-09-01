@@ -64,6 +64,7 @@
   align-items: center;
   animation: fade-in 9s ease 1.5s forwards;
   opacity: 0;
+  overflow-x: hidden;
 }
 .main_container .merch_container {
   display: flex;
@@ -175,7 +176,7 @@
 .main_container .merch_container .merch_grid .grid_item .collection_grid-title {
   font-size: 35px;
   color: #fff !important;
-  font-family: "Oleo Script Swash Caps", cursive;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   margin: auto;
   position: absolute;
@@ -195,7 +196,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
 }
 .subscribe p {
   font-size: 1.3rem;
@@ -231,7 +232,6 @@
   padding: 6px 10px;
 }
 
-/* ONE PIECE COVERS */
 @keyframes slidy {
   0% {
     left: 0%;
@@ -282,36 +282,96 @@ div#slider figure {
   animation: 30s slidy infinite;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 1517px) {
-  .hero_container .hero_container_title {
-    padding-left: 10%;
-  }
-  .hero_container img {
-    width: 45%;
+.l-container {
+  width: 100%;
+  height: 50%;
+
+  @media screen and (max-width: 760px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media only screen and (max-width: 1424px) {
-  .hero_container img {
-    padding-right: 5%;
-  }
+.b-game-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+
+  padding-bottom: 150%;
+  perspective: 1000px;
 }
 
-@media only screen and (max-width: 1315px) {
-  .hero_container .hero_container_title p {
-    font-size: 1.2rem;
-    line-height: 0.8;
-  }
-  .hero_container .hero_container_title p:first-child {
-    font-size: 3rem;
-  }
+.b-game-card__cover {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-size: cover;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+  transform-origin: top center;
+  will-change: transform;
+  transform: skewX(0.001deg);
+  transition: transform 0.35s ease-in-out;
 }
-@media only screen and (max-width: 1287px) {
-  .hero_container .hero_container_title p {
-    font-size: 1.1rem;
-    line-height: 0.8;
-  }
+
+.b-game-card__cover::after {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: linear-gradient(
+    226deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.4) 35%,
+    rgba(255, 255, 255, 0.2) 42%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  transform: translateY(-20%);
+  will-change: transform;
+  transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+}
+
+.b-game-card:hover .b-game-card__cover {
+  transform: rotateX(7deg) translateY(-6px);
+}
+
+.b-game-card:hover .b-game-card__cover::after {
+  transform: translateY(0%);
+}
+
+.b-game-card::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background: rgba(#000000, 0.5);
+  box-shadow: 0 6px 12px 12px rgba(#000000, 0.4);
+  will-change: opacity;
+  transform-origin: top center;
+  transform: skewX(0.001deg);
+  transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.b-game-card:hover::before {
+  opacity: 0.6;
+  transform: rotateX(7deg) translateY(-6px) scale(1.05);
+}
+
+.carousel-container {
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 1110px) {

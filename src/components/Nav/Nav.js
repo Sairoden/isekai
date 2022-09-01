@@ -28,6 +28,9 @@ const IconFont = createFromIconfontCN({
     "//at.alicdn.com/t/font_1788044_0dwu4guekcwr.js", //icon-shoppingcart
   ],
 });
+
+
+
 const { Search } = Input;
 const { SubMenu } = Menu;
 const Nav = () => {

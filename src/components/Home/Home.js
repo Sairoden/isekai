@@ -2,17 +2,23 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./Home.css";
-import mainCover from "../../assets/main-cover.jpg";
-import accessories from "../../assets/sailor-moon-cat-airpod-cases.jpg";
-import teeshirt from "../../assets/naruto-kakashi-hatake-shirt.jpg";
-import hoodie from "../../assets/attack-on-titan-logo-hoodie.jpg";
-import ledlight from "../../assets/hunter-x-hunter-killua-led-lamp.jpg";
-import pillow from "../../assets/kawaii-baby-panda-body-pillow.jpg";
+import mainCover from "../../assets/main-cover.webp";
+import tShirt from "../../assets/ghost-fighter.webp";
+import accessories from "../../assets/accessories.webp";
+import hoodie from "../../assets/hoodie.jpg";
+import ledlight from "../../assets/led-light.jpg";
+import pillow from "../../assets/pillow.jpg";
 import onePiece from "../../assets/one-piece.jpg";
 import model1 from "../../assets/model1.jpg";
 import model2 from "../../assets/model2.jpg";
 import cartoon from "../../assets/cartoon.jpg";
 import clothes from "../../assets/clothes.jpg";
+
+import Carousel from "../Carousel/Carousel";
+
+import { Input } from "antd";
+import { MailOutlined } from "@ant-design/icons";
+import { Form, Button } from "antd";
 
 const layout = {
   labelCol: { span: 8 },
@@ -24,9 +30,11 @@ const validateMessages = {
     email: "Please enter a valid email.",
   },
 };
-const intialState = false;
+
+const initialState = false;
+
 const Home = () => {
-  const [subscribed, setSubscribed] = useState(intialState);
+  const [subscribed, setSubscribed] = useState(initialState);
 
   const onChange = () => {
     setSubscribed(!subscribed);
@@ -55,9 +63,9 @@ const Home = () => {
           <div className="merch_grid first-row">
             <Link to="/" className="grid_item overlay">
               <div>
-                <img src={teeshirt} alt="kakashi_hoodie" />
+                <img src={tShirt} alt="Ghost Fighter shirt" />
                 <div className="collection_grid_text-wrapper">
-                  <h3 className="collection_grid-title">tee shirts</h3>
+                  <h3 className="collection_grid-title">T-Shirts</h3>
                 </div>
               </div>
             </Link>
@@ -65,7 +73,7 @@ const Home = () => {
               <div>
                 <img src={accessories} alt="sailor_moon_case" />
                 <div className="collection_grid_text-wrapper">
-                  <h3 className="collection_grid-title">accessories</h3>
+                  <h3 className="collection_grid-title">Accessories</h3>
                 </div>
               </div>
             </Link>
@@ -75,7 +83,7 @@ const Home = () => {
               <div>
                 <img src={hoodie} alt="attack_on_titan_hoodie" />
                 <div className="collection_grid_text-wrapper">
-                  <h3 className="collection_grid-title">hoodies</h3>
+                  <h3 className="collection_grid-title">Hoodies</h3>
                 </div>
               </div>
             </Link>
@@ -83,7 +91,7 @@ const Home = () => {
               <div>
                 <img src={ledlight} alt="hunter_x_hunter_led_light" />
                 <div className="collection_grid_text-wrapper">
-                  <h3 className="collection_grid-title">led lights</h3>
+                  <h3 className="collection_grid-title">Led Lights</h3>
                 </div>
               </div>
             </Link>
@@ -98,9 +106,7 @@ const Home = () => {
               </div>
             </Link>
           </div>
-
           <div className="break"></div>
-
           <div id="slider">
             <figure>
               <img src={model1} alt="Model" />
@@ -113,12 +119,9 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className="subscribe">
-        <p>Subscribe To Our Newsletter</p>
-        <p>
-          We promise to only send you cool stuff. And a coupon for 15% off your
-          first order!
-        </p>
+      <div className="subscribe">
+        <p>GET FEATURED</p>
+        <p>Send us your photos</p>
         {subscribed ? (
           <div className="subscribed">
             <MailOutlined /> Thanks for subscribing
@@ -141,9 +144,26 @@ const Home = () => {
             </Button>
           </Form>
         )}
-      </div>
+        <br />
 
-      <Footer /> */}
+        {/* <div className="l-container">
+          <div className="b-game-card">
+          <img className="b-game-card__cover" src={modelCard2} alt="none" />
+          </div>
+          <div className="b-game-card">
+            <img className="b-game-card__cover" src={modelCard1} alt="none" />
+          </div>
+          <div className="b-game-card">
+            <img className="b-game-card__cover" src={modelCard4} alt="none" />
+          </div>
+          <div className="b-game-card">
+            <img className="b-game-card__cover" src={modelCard3} alt="none" />
+          </div>
+        </div> */}
+      </div>
+      <Carousel />
+
+      {/* <Footer /> */}
     </>
   );
 };
