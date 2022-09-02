@@ -8,9 +8,15 @@ function App() {
     <Routes>
       <Route path="/" element={<Nav />}>
         <Route index element={<Home />} />
+        {/* <Route path="/collection/links" element={<Collection />} /> */}
       </Route>
     </Routes>
   );
 }
 
 export default App;
+
+// MONIC MONIC
+// JHOEDIN
+// SAIRODEN
+// ISEKAI PROJECT
