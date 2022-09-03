@@ -2,13 +2,18 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./components/Home/Home";
 import Nav from "./components/Nav/Nav";
+import Register from "./components/User/Register/Register";
+import Login from "./components/User/Login/Login";
+import Profile from "./components/User/Profile/Profile";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Nav />}>
         <Route index element={<Home />} />
-        {/* <Route path="/collection/links" element={<Collection />} /> */}
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/profile" element={<Profile />} />
       </Route>
     </Routes>
   );
