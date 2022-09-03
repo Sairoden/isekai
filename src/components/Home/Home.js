@@ -14,7 +14,8 @@ import model2 from "../../assets/model2.jpg";
 import cartoon from "../../assets/cartoon.jpg";
 import clothes from "../../assets/clothes.jpg";
 
-import Carousel from "../Carousel/Carousel";
+import Carousel from "./Carousel/Carousel";
+import Footer from "./Footer/Footer";
 
 import { Input } from "antd";
 import { MailOutlined } from "@ant-design/icons";
@@ -120,8 +121,10 @@ const Home = () => {
       </div>
 
       <div className="subscribe">
-        <p>GET FEATURED</p>
-        <p>Send us your photos</p>
+        <p>GET FEATURED </p>
+        <p>
+          Send us your photos <strong>☜(ﾟヮﾟ☜)</strong>
+        </p>
         {subscribed ? (
           <div className="subscribed">
             <MailOutlined /> Thanks for subscribing
@@ -161,9 +164,9 @@ const Home = () => {
           </div>
         </div> */}
       </div>
-      <Carousel />
 
-      {/* <Footer /> */}
+      <Carousel />
+      <Footer />
     </>
   );
 };
