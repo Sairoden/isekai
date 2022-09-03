@@ -148,21 +148,6 @@ const Home = () => {
           </Form>
         )}
         <br />
-
-        {/* <div className="l-container">
-          <div className="b-game-card">
-          <img className="b-game-card__cover" src={modelCard2} alt="none" />
-          </div>
-          <div className="b-game-card">
-            <img className="b-game-card__cover" src={modelCard1} alt="none" />
-          </div>
-          <div className="b-game-card">
-            <img className="b-game-card__cover" src={modelCard4} alt="none" />
-          </div>
-          <div className="b-game-card">
-            <img className="b-game-card__cover" src={modelCard3} alt="none" />
-          </div>
-        </div> */}
       </div>
 
       <Carousel />
