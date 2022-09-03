@@ -14,7 +14,8 @@ import model2 from "../../assets/model2.jpg";
 import cartoon from "../../assets/cartoon.jpg";
 import clothes from "../../assets/clothes.jpg";
 
-import Carousel from "../Carousel/Carousel";
+import Carousel from "./Carousel/Carousel";
+import Footer from "./Footer/Footer";
 
 import { Input } from "antd";
 import { MailOutlined } from "@ant-design/icons";
@@ -120,8 +121,10 @@ const Home = () => {
       </div>
 
       <div className="subscribe">
-        <p>GET FEATURED</p>
-        <p>Send us your photos</p>
+        <p>GET FEATURED </p>
+        <p>
+          Send us your photos <strong>☜(ﾟヮﾟ☜)</strong>
+        </p>
         {subscribed ? (
           <div className="subscribed">
             <MailOutlined /> Thanks for subscribing
@@ -145,30 +148,11 @@ const Home = () => {
           </Form>
         )}
         <br />
-
-        {/* <div className="l-container">
-          <div className="b-game-card">
-          <img className="b-game-card__cover" src={modelCard2} alt="none" />
-          </div>
-          <div className="b-game-card">
-            <img className="b-game-card__cover" src={modelCard1} alt="none" />
-          </div>
-          <div className="b-game-card">
-            <img className="b-game-card__cover" src={modelCard4} alt="none" />
-          </div>
-          <div className="b-game-card">
-            <img className="b-game-card__cover" src={modelCard3} alt="none" />
-          </div>
-        </div> */}
       </div>
 
       <Carousel />
-
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
 export default Home;
-
-
-// 

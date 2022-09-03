@@ -1,21 +1,21 @@
 import "./Carousel.css";
 
 import { useState, useEffect } from "react";
-import modelCard1 from "../../assets/model-card4.webp";
-import modelCard2 from "../../assets/model-card3.webp";
-import modelCard3 from "../../assets/model-card1.webp";
-import modelCard4 from "../../assets/model-card5.webp";
-import modelCard5 from "../../assets/model-card15.webp";
-import modelCard6 from "../../assets/model-card6.webp";
-import modelCard7 from "../../assets/model-card7.webp";
-import modelCard8 from "../../assets/model-card8.webp";
-import modelCard9 from "../../assets/model-card9.webp";
-import modelCard10 from "../../assets/model-card10.webp";
-import modelCard11 from "../../assets/model-card11.webp";
-import modelCard12 from "../../assets/model-card12.webp";
-import modelCard13 from "../../assets/model-card13.webp";
-import modelCard14 from "../../assets/model-card14.webp";
-import modelCard15 from "../../assets/model-card2.webp";
+import modelCard1 from "../../../assets/model-card4.webp";
+import modelCard2 from "../../../assets/model-card3.webp";
+import modelCard3 from "../../../assets/model-card1.webp";
+import modelCard4 from "../../../assets/model-card5.webp";
+import modelCard5 from "../../../assets/model-card15.webp";
+import modelCard6 from "../../../assets/model-card6.webp";
+import modelCard7 from "../../../assets/model-card7.webp";
+import modelCard8 from "../../../assets/model-card8.webp";
+import modelCard9 from "../../../assets/model-card9.webp";
+import modelCard10 from "../../../assets/model-card10.webp";
+import modelCard11 from "../../../assets/model-card11.webp";
+import modelCard12 from "../../../assets/model-card12.webp";
+import modelCard13 from "../../../assets/model-card13.webp";
+import modelCard14 from "../../../assets/model-card14.webp";
+import modelCard15 from "../../../assets/model-card2.webp";
 
 const slideWidth = 30;
 
@@ -30,10 +30,10 @@ const _items = [
   },
   {
     player: {
-      title: "milkgore",
-      desc: "Lmao I was gonna take a break but then I remembered that I don’t have a life outside Instagram 🤡",
-      image: modelCard2,
-      link: "https://www.instagram.com/milkgore/",
+      title: "kbho_odink",
+      desc: "Baby's finally (almost) done ( ◜‿◝ )♡ Ff wat fotootjes voor dat hij weer eens ergens aan gemaakt moet worden weetje? En wederom weer wat van mijn favoriete merkjes aan...",
+      image: modelCard8,
+      link: "https://www.instagram.com/kbho_odink/",
     },
   },
   {
@@ -78,12 +78,13 @@ const _items = [
   },
   {
     player: {
-      title: "kbho_odink",
-      desc: "Baby's finally (almost) done ( ◜‿◝ )♡ Ff wat fotootjes voor dat hij weer eens ergens aan gemaakt moet worden weetje? En wederom weer wat van mijn favoriete merkjes aan...",
-      image: modelCard8,
-      link: "https://www.instagram.com/kbho_odink/",
+      title: "milkgore",
+      desc: "Lmao I was gonna take a break but then I remembered that I don’t have a life outside Instagram 🤡",
+      image: modelCard2,
+      link: "https://www.instagram.com/milkgore/",
     },
   },
+
   {
     player: {
       title: "xhiitayx",
@@ -171,7 +172,10 @@ const CarouselSlideItem = ({ pos, idx, activeIdx }) => {
         </a>
       </div>
       <div className="carousel-slide-item__body">
-        <h4>{item.player.title}</h4>
+        <h4>
+          <strong>{item.player.title}</strong>
+        </h4>
+
         <p>{item.player.desc}</p>
       </div>
     </li>
