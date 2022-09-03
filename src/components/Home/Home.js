@@ -161,6 +161,7 @@ const Home = () => {
           </div>
         </div> */}
       </div>
+
       <Carousel />
 
       {/* <Footer /> */}
@@ -168,3 +169,6 @@ const Home = () => {
   );
 };
 export default Home;
+
+
+// 

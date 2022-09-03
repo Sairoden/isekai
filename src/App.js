@@ -20,3 +20,8 @@ function App() {
 }
 
 export default App;
+
+// MONIC MONIC
+// JHOEDIN
+// SAIRODEN
+// ISEKAI PROJECT
