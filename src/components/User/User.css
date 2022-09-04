@@ -1,6 +1,5 @@
 .login,
 .register {
-  padding: 50px 0;
   margin: auto;
   width: 50vw;
   height: calc(100vh - 111.1);
@@ -12,28 +11,57 @@
 
   font-family: "PT Sans", sans-serif;
 }
-.login .heading {
+.login {
+  padding: 50px 0;
+}
+.register {
+  padding: 25px 0;
+}
+.heading {
   font-family: "Montserrat", sans-serif;
   font-size: 1.9rem;
 }
 .login .sub-heading,
-.login .label {
+.login .label,
+.register .sub-heading,
+.register .label {
   font-size: 1rem;
 }
 
-.login form {
+.login form,
+.register form {
   width: 50vh;
 }
 .bundle {
   margin-bottom: 5px;
 }
-.login input {
+.login input,
+.register input {
   width: 100%;
   height: 40px;
   padding: 0 10px;
   border: 1px solid #515151;
 }
+.password-holder {
+  position: relative;
+  height: 40px;
+}
+.input-password {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.show-password,
+.hide-password {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
 .submit-btn {
+  position: relative;
+  top: 50%;
+
   margin: 10px 0;
   width: 100%;
   height: 40px;
@@ -41,13 +69,17 @@
   transition: background-color 0.3s;
 }
 .submit-btn:hover {
+  cursor: pointer;
   color: white;
   background-color: #40a9ff;
   border: none;
 }
-.login a {
+.login a,
+.register a {
   color: #40a9ff;
 }
+.login a:hover,
 .login a:hover {
+  cursor: pointer;
   color: black;
 }

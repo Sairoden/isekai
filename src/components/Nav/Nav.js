@@ -18,6 +18,7 @@ import {
   MenuOutlined,
 } from "@ant-design/icons";
 import { SearchInput } from "./Style";
+import React from "react";
 // import { apparel, homegoods, techAccessories } from "../../seed";
 // import { useHistory } from "react-router-dom";
 
@@ -51,7 +52,7 @@ const Nav = () => {
     setVisible(false);
   };
 
-  const search = e => {
+  const search = (e) => {
     e.preventDefault();
   };
 
@@ -200,7 +201,7 @@ const Nav = () => {
         <div className="search">
           <SearchOutlined
             className="search_icon"
-            onClick={() => SetSearchActive(searchActive => !searchActive)}
+            onClick={() => SetSearchActive((searchActive) => !searchActive)}
           />
           <SearchInput
             className="searchInput"
