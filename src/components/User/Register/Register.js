@@ -6,7 +6,6 @@ import { EyeInvisibleOutlined, EyeOutlined } from "@ant-design/icons";
 
 const Register = () => {
   const [PasswordType, setPasswordType] = useState("password");
-
   function togglePasswordType() {
     if (PasswordType === "password") {
       setPasswordType("text");

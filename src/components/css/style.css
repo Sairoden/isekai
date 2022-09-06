@@ -173,10 +173,12 @@
   padding: 0 10px;
   border: 1px solid #515151;
 }
-.login a {
+.login a,
+.register a {
   color: #40a9ff;
 }
-.login a:hover {
+.login a:hover,
+.register a:hover {
   color: black;
 }
 .password-holder {

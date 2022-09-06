@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
+import { EyeInvisibleOutlined, EyeOutlined } from "@ant-design/icons";
 
 import "./login.css";
 
 const Login = () => {
+  const [PasswordType, setPasswordType] = useState("password");
+  function togglePasswordType() {
+    if (PasswordType === "password") {
+      setPasswordType("text");
+    } else {
+      setPasswordType("password");
+    }
+  }
   return (
     <div className="login">
       <h1 className="heading">LOGIN</h1>
@@ -23,7 +33,27 @@ const Login = () => {
               <h3 className="label">Password</h3>
             </label>
           </div>
-          <input type="text" id="password" />
+          <div className="password-holder">
+            <input
+              type={PasswordType}
+              id="password"
+              className="input-password"
+              required
+            />
+            <button type="button" onClick={togglePasswordType}>
+              {PasswordType === "password" ? (
+                <EyeInvisibleOutlined
+                  style={{ fontSize: "20px" }}
+                  className="hide-password"
+                />
+              ) : (
+                <EyeOutlined
+                  style={{ fontSize: "20px" }}
+                  className="show-password"
+                />
+              )}
+            </button>
+          </div>
         </div>
         <button className="submit-btn">LOGIN</button>
       </form>
