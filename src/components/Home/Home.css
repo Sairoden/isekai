@@ -51,7 +51,7 @@
 
 .hero_container .hero_container_title .btn:hover {
   padding-right: 51px;
-  background: url("/src/assets/button-arrow.png") no-repeat 150% 35%;
+  background: url("/src/assets/Home/button-arrow.png") no-repeat 150% 35%;
   background-size: 29px;
   background-position: 90% 49%;
   user-select: none;

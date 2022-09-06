@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 export const apparelNav = (
   <Menu>
     <Menu.Item>
-      <Link to="/">All Apparel</Link>
+      <Link to="/collections/anime-clothing-apparel">All Apparel</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Tee Shirts</Link>
+      <Link to="/collections/anime-tee-shirts">Tee Shirts</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Hoodies</Link>
+      <Link to="/collections/anime-hoodies-and-sweatshirts">Hoodies</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Socks</Link>
+      <Link to="/collections/anime-socks">Socks</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Cosplay</Link>
+      <Link to="/collections/anime-weeb-cosplay-accessories">Cosplay</Link>
     </Menu.Item>
   </Menu>
 );
@@ -23,38 +23,44 @@ export const apparelNav = (
 export const homegoodsNav = (
   <Menu>
     <Menu.Item>
-      <Link to="/">All Homegoods</Link>
+      <Link to="/collections/anime-homegoods">All Homegoods</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">3D LED Lights</Link>
+      <Link to="/collections/3d-led-anime-bedroom-lights-lamps">
+        3D LED Lights
+      </Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Pillows</Link>
+      <Link to="/collections/anime-kawaii-cartoon-bedroom-pillows">
+        Pillows
+      </Link>
     </Menu.Item>
   </Menu>
 );
 export const lifestyleNav = (
   <Menu>
     <Menu.Item>
-      <Link to="/">Sad Aesthetic</Link>
+      <Link to="/collections/sad-aesthetic">Sad Aesthetic</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Vaporwave</Link>
+      <Link to="/collections/vaporwave-aesthetic-clothing-tees-hoodies-merch">
+        Vaporwave
+      </Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">NSFW</Link>
+      <Link to="/collections/nsfw-anime-merch">NSFW</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Kawaii</Link>
+      <Link to="/collections/kawaii-livestyle-accessories">Kawaii</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Senpai</Link>
+      <Link to="/collections/japanese-senpai-shirts-and-hoodies">Senpai</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Waifu</Link>
+      <Link to="/collections/japanese-waifu-shirts-and-hoodies">Waifu</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Cosplay</Link>
+      <Link to="/collections/anime-weeb-cosplay-accessories">Cosplay</Link>
     </Menu.Item>
   </Menu>
 );
@@ -62,10 +68,21 @@ export const lifestyleNav = (
 export const techAccessoriesNav = (
   <Menu>
     <Menu.Item>
-      <Link to="/">Phone Cases</Link>
+      <Link to="/collections/anime-phone-cases">Phone Cases</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">AirPod Cases</Link>
+      <Link to="/collections/anime-airpod-1-2-pro-cases">AirPod Cases</Link>
+    </Menu.Item>
+  </Menu>
+);
+
+export const AboutUsNav = (
+  <Menu>
+    <Menu.Item>
+      <Link to="/help/about-us">About Us</Link>
+    </Menu.Item>
+    <Menu.Item>
+      <Link to="/help/contact-us">Contact Us</Link>
     </Menu.Item>
   </Menu>
 );
@@ -73,37 +90,43 @@ export const techAccessoriesNav = (
 export const byAnimeNav = (
   <Menu>
     <Menu.Item>
-      <Link to="/">All Anime Merch</Link>
+      <Link to="/collections/all-anime-merch">All Anime Merch</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Attack On Titan</Link>
+      <Link to="/collections/attack-on-titan-anime-merch">Attack On Titan</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Darling In The Franxx</Link>
+      <Link to="/collections/darling-in-the-franxx-anime-weeb-merch">
+        Darling In The Franxx
+      </Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Demon Slayer</Link>
+      <Link to="/collections/demon-slayer-anime-merch">Demon Slayer</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Dragon Ball Z</Link>
+      <Link to="/collections/dragon-ball-z-anime-merch">Dragon Ball Z</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Hunter X Hunter</Link>
+      <Link to="/collections/hunter-x-hunter-anime-merch">Hunter X Hunter</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">My Hero Academia</Link>
+      <Link to="/collections/my-hero-academia-anime-merch">
+        My Hero Academia
+      </Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">My Neighbor Totoro</Link>
+      <Link to="/collections/my-neighbor-totoro-anime-merch">
+        My Neighbor Totoro
+      </Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Naruto</Link>
+      <Link to="/collections/naruto-anime-merch">Naruto</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">One Piece</Link>
+      <Link to="/collections/one-piece-anime-merch">One Piece</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/">Sailor Moon</Link>
+      <Link to="/collections/sailor-moon-anime-merch">Sailor Moon</Link>
     </Menu.Item>
   </Menu>
 );

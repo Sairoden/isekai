@@ -2,20 +2,20 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./Home.css";
-import mainCover from "../../assets/main-cover.webp";
-import tShirt from "../../assets/ghost-fighter.webp";
-import accessories from "../../assets/accessories.webp";
-import hoodie from "../../assets/hoodie.jpg";
-import ledlight from "../../assets/led-light.jpg";
-import pillow from "../../assets/pillow.jpg";
-import onePiece from "../../assets/one-piece.jpg";
-import model1 from "../../assets/model1.jpg";
-import model2 from "../../assets/model2.jpg";
-import cartoon from "../../assets/cartoon.jpg";
-import clothes from "../../assets/clothes.jpg";
+import mainCover from "../../assets/Home/main-cover.webp";
+import tShirt from "../../assets/Home/ghost-fighter.webp";
+import accessories from "../../assets/Home/accessories.webp";
+import hoodie from "../../assets/Home/hoodie.jpg";
+import ledlight from "../../assets/Home/led-light.jpg";
+import pillow from "../../assets/Home/pillow.jpg";
+import onePiece from "../../assets/Home/one-piece.jpg";
+import model1 from "../../assets/Home/model1.jpg";
+import model2 from "../../assets/Home/model2.jpg";
+import cartoon from "../../assets/Home/cartoon.jpg";
+import clothes from "../../assets/Home/clothes.jpg";
 
 import Carousel from "./Carousel/Carousel";
-import Footer from "./Footer/Footer";
+import Footer from "../Footer/Footer";
 
 import { Input } from "antd";
 import { MailOutlined } from "@ant-design/icons";
@@ -47,7 +47,7 @@ const Home = () => {
         <div className="hero_container_title">
           <p>Stay Sugoi ツ</p>
           <p>Only the best anime merch and inspiration</p>
-          <Link to="/" className="btn">
+          <Link to="/collections/anime-clothing-apparel" className="btn">
             Treat Yourself{" "}
           </Link>
         </div>
@@ -57,12 +57,14 @@ const Home = () => {
           alt="hero_img_girl"
         />
       </div>
-
       <div className="main_container">
         <div className="merch_container">
           <p>Isekai Merchandise</p>
           <div className="merch_grid first-row">
-            <Link to="/" className="grid_item overlay">
+            <Link
+              to="/collections/anime-tee-shirts"
+              className="grid_item overlay"
+            >
               <div>
                 <img src={tShirt} alt="Ghost Fighter shirt" />
                 <div className="collection_grid_text-wrapper">
@@ -70,7 +72,10 @@ const Home = () => {
                 </div>
               </div>
             </Link>
-            <Link to="/" className="grid_item overlay">
+            <Link
+              to="/collections/anime-tech-accessories"
+              className="grid_item overlay"
+            >
               <div>
                 <img src={accessories} alt="sailor_moon_case" />
                 <div className="collection_grid_text-wrapper">
@@ -80,7 +85,10 @@ const Home = () => {
             </Link>
           </div>
           <div className="merch_grid second-row">
-            <Link to="/" className="grid_item overlay">
+            <Link
+              to="/collections/anime-hoodies-and-sweatshirts"
+              className="grid_item overlay"
+            >
               <div>
                 <img src={hoodie} alt="attack_on_titan_hoodie" />
                 <div className="collection_grid_text-wrapper">
@@ -88,7 +96,10 @@ const Home = () => {
                 </div>
               </div>
             </Link>
-            <Link to="/" className="grid_item overlay">
+            <Link
+              to="/collections/3d-led-anime-bedroom-lights-lamps"
+              className="grid_item overlay"
+            >
               <div>
                 <img src={ledlight} alt="hunter_x_hunter_led_light" />
                 <div className="collection_grid_text-wrapper">
@@ -96,7 +107,10 @@ const Home = () => {
                 </div>
               </div>
             </Link>
-            <Link to="/" className="grid_item overlay">
+            <Link
+              to="/collections/anime-kawaii-cartoon-bedroom-pillows"
+              className="grid_item overlay"
+            >
               <div>
                 <img src={pillow} alt="panda_pillow" />
                 <div className="collection_grid_text-wrapper">
@@ -108,6 +122,7 @@ const Home = () => {
             </Link>
           </div>
           <div className="break"></div>
+
           <div id="slider">
             <figure>
               <img src={model1} alt="Model" />
@@ -119,7 +134,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div className="subscribe">
         <p>GET FEATURED </p>
         <p>
@@ -149,7 +163,6 @@ const Home = () => {
         )}
         <br />
       </div>
-
       <Carousel />
       <Footer />
     </>

@@ -5,6 +5,7 @@ import {
   lifestyleNav,
   techAccessoriesNav,
   byAnimeNav,
+  AboutUsNav,
 } from "./Dropdown";
 import "./Nav.css";
 import { Link, Outlet } from "react-router-dom";
@@ -18,8 +19,8 @@ import {
   MenuOutlined,
 } from "@ant-design/icons";
 import { SearchInput } from "./Style";
-// import { apparel, homegoods, techAccessories } from "../../seed";
-// import { useHistory } from "react-router-dom";
+// import { apparel, homegoods, techAccessories } from "../../data.js";
+import { useNavigate } from "react-router-dom";
 
 // const combineProduct = apparel.concat(homegoods).concat(techAccessories);
 
@@ -32,16 +33,16 @@ const IconFont = createFromIconfontCN({
 const { Search } = Input;
 const { SubMenu } = Menu;
 const Nav = () => {
-  // const history = useHistory();
+  const history = useNavigate();
   const [searchActive, SetSearchActive] = useState(false);
   const [visible, setVisible] = useState(false);
 
-  // const onSearch = e => {
-  //   const filtered = combineProduct.filter(item =>
-  //     item.name.toLowerCase().includes(e.toLowerCase())
-  //   );
-  //   history.push(`/search?q=${e}`);
-  // };
+  const onSearch = e => {
+    // const filtered = combineProduct.filter(item =>
+    //   item.name.toLowerCase().includes(e.toLowerCase())
+    // );
+    history.push(`/search?q=${e}`);
+  };
 
   const showDrawer = () => {
     setVisible(true);
@@ -64,7 +65,7 @@ const Nav = () => {
             <Search
               placeholder="Search"
               allowClear
-              // onSearch={onSearch}
+              onSearch={onSearch}
               style={{ width: 200 }}
             />
           </div>
@@ -194,6 +195,11 @@ const Nav = () => {
           <Dropdown overlay={techAccessoriesNav} className="nav_link">
             <Link to="/collections/anime-tech-accessories">
               Tech Accessories <DownOutlined className="arrow" />
+            </Link>
+          </Dropdown>
+          <Dropdown overlay={AboutUsNav} className="nav_link">
+            <Link to="/help/about-us">
+              About Us <DownOutlined className="arrow" />
             </Link>
           </Dropdown>
         </nav>
