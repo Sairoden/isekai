@@ -50,6 +50,7 @@ import TechAccessories from "./components/Shop/TechAccessories/TechAccessories";
 // Contact Us
 import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from "./components/AboutUs/ContactUs";
+import React from "react";
 
 function App() {
   return (
