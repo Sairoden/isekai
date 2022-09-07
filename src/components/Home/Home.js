@@ -20,6 +20,11 @@ import Footer from "../Footer/Footer";
 import { Input } from "antd";
 import { MailOutlined } from "@ant-design/icons";
 import { Form, Button } from "antd";
+import React from "react";
+import { Categories } from "./Categories/Categories";
+import { LandingPage } from "./landingPage/LandingPage";
+import { Slideshow } from "./Slideshow/Slideshow";
+import Subscribe from "./subscribe/Subscribe";
 
 const layout = {
   labelCol: { span: 8 },
@@ -43,7 +48,11 @@ const Home = () => {
 
   return (
     <>
-      <div className="hero_container">
+      <LandingPage />
+      <Categories />
+      <Slideshow />
+      <Subscribe />
+      {/* <div className="hero_container">
         <div className="hero_container_title">
           <p>Stay Sugoi ツ</p>
           <p>Only the best anime merch and inspiration</p>
@@ -162,7 +171,7 @@ const Home = () => {
           </Form>
         )}
         <br />
-      </div>
+      </div> */}
       <Carousel />
       <Footer />
     </>

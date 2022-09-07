@@ -192,11 +192,10 @@ a {
 }
 
 .carousel__dots {
-  display: inline-block;
-  left: 50%;
+  width: fit-content;
+  /* display: inline-block; */
   margin-top: 2rem;
-  position: absolute;
-  transform: translateX(-50%);
+  margin: auto;
 }
 .carousel__dots .dot {
   background: #ccc;
