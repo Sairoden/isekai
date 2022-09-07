@@ -8,66 +8,72 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="shipping_notice_container">
-        <FontAwesomeIcon icon={faShippingFast} className="icon" />
-        <p>Shipping Delay Notice</p>
-        <p>
-          Due to Covid delays, orders may take 2 - 3 weeks to arrive. We hope
-          you still love us.
-        </p>
-        <p>
-          <strong>(づ｡◕‿‿◕｡)づ</strong>
-        </p>
+      <div className="notice">
+        <div className="box">
+          <FontAwesomeIcon icon={faShippingFast} className="icon" />
+          <div className="heading">Shipping Delay Notice</div>
+          <div className="sub-heading">
+            Due to Covid delays, orders may take 2 - 3 weeks to arrive. We hope
+            you still love us.
+          </div>
+          <div className="sub-heading">
+            <strong>(づ｡◕‿‿◕｡)づ</strong>
+          </div>
+        </div>
       </div>
-
-      <div className="footer">
-        <div className="grid_list">
-          <div className="box_item">Quick Links</div>
-          <Link
-            to="/shipping-and-returns-refund-policy"
-            className="box_item link"
-          >
-            Shipping Info
-          </Link>
-          <Link to="/pages/contact-us" className="box_item link">
-            Help Center
-          </Link>
-          <Link to="/policies/refund-policy" className="box_item link">
-            Refund Policy
-          </Link>
-          <Link to="/policies/privacy-policy" className="box_item link">
-            Privacy Policy
-          </Link>
-          <Link to="/policies/terms-of-service" className="box_item link">
-            Terms of Service
-          </Link>
+      <div className="foot">
+        <div className="box">
+          <div className="col">
+            <p className="sub-heading">Quick Link</p>
+            <div className="links">
+              <Link to="/shipping-and-returns-refund-policy">
+                Shipping Info
+              </Link>
+              <Link to="/pages/contact-us">Help Center</Link>
+              <Link to="/policies/refund-policy">Refund Policy</Link>
+              <Link to="/policies/privacy-policy">Privacy Policy</Link>
+              <Link to="/policies/terms-of-service">Terms of Service</Link>
+            </div>
+          </div>
+          <div className="col">
+            <p className="sub-heading">Follow Us</p>
+            <div className="links">
+              <Link to="/" className="box_item link">
+                {" "}
+                <FontAwesomeIcon icon={faFacebookF} className="icon" /> Facebook
+              </Link>
+              <Link to="/" className="box_item link">
+                <FontAwesomeIcon icon={faInstagram} className="icon" />{" "}
+                Instagram
+              </Link>
+            </div>
+          </div>
+          <div className="col">
+            <p className="sub-heading">Company</p>
+            <div className="links">
+              <Link to="">Shipping Info</Link>
+              <Link to="">About Isekai</Link>
+              <Link to="">For Business</Link>
+              <Link to="">Merchandise Partner</Link>
+              <Link to="">Careers</Link>
+            </div>
+          </div>
+          <div className="col">
+            <p className="sub-heading">Contact Us</p>
+            <div className="links">
+              <p>
+                94 Kamuning Road Interweave Building Brgy. Kamuning, Quezon City
+                1103
+              </p>
+              <p>isekai@gmail.com</p>
+              <p>0915 418 2976</p>
+            </div>
+          </div>
         </div>
-        <div className="grid_list">
-          <div className="box_item">Follow Us</div>
-          <Link to="/" className="box_item link">
-            {" "}
-            <FontAwesomeIcon icon={faFacebookF} className="icon" /> Facebook
-          </Link>
-          <Link to="/" className="box_item link">
-            <FontAwesomeIcon icon={faInstagram} className="icon" /> Instagram
-          </Link>
-        </div>
-        <div className="grid_list">
-          <div className="box_item">Company</div>
-          <p>About Isekai</p>
-          <p>For Business</p>
-          <p>Merchandise partners</p>
-          <p>Careers</p>
-          <p>Copyright © 2022 by Isekai, Inc. All rights reserved.</p>
-        </div>
-        <div className="grid_list">
-          <div className="box_item">Contact Us</div>
-          <p>
-            94 Kamuning Road Interweave Building Brgy. Kamuning, Quezon City
-            1103
+        <div className="box">
+          <p className="copyright">
+            Copyright © 2022 by Isekai, Inc. All rights reserved.
           </p>
-          <p>isekai@gmail.com</p>
-          <p>0915 418 2976</p>
         </div>
       </div>
     </>

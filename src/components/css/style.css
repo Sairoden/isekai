@@ -2,7 +2,9 @@
 .categories,
 .subscribe,
 .carousel,
-.profile {
+.profile,
+.notice,
+.foot {
   margin: 0 auto;
   padding: 50px 75px;
 }
@@ -86,7 +88,6 @@
 .categories .box {
   margin: auto;
   width: 95%;
-  /* height: 20rem; */
   overflow: hidden;
   border-radius: 10px;
 }
@@ -154,6 +155,55 @@
 .carousel .button .icon {
   font-size: 50px;
 } */
+/* footer */
+.notice {
+  background-color: #f9f9f9;
+}
+.notice .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notice .icon {
+  margin: 10px;
+  font-size: 2rem;
+}
+.notice .sub-heading {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.foot {
+  background: #202020;
+  color: white;
+}
+.foot .box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.foot .col {
+  width: 25%;
+}
+.foot .sub-heading {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.foot .p {
+  color: #f9f9f9;
+}
+.foot a {
+  margin: 10px 0;
+  display: block;
+  letter-spacing: 0.1rem;
+}
+.foot .copyright {
+  padding: 10px 0;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
 /* login */
 .login {
   padding: 50px 0;
@@ -201,6 +251,7 @@
 .profile .col:last-child {
   width: 25%;
 }
+
 @media screen and (max-width: 768px) {
   .about,
   .categories {
@@ -218,6 +269,26 @@
   }
   .subscribe form {
     width: 90vw;
+  }
+  .foot .box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .foot .col {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .foot .box {
+    display: flex;
+    flex-direction: column;
+  }
+  .foot .col {
+    width: 100%;
+  }
+  .foot .sub-heading {
+    text-align: center;
   }
 }
 @media screen and (min-width: 1441px) {
