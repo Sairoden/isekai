@@ -5,7 +5,7 @@ import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
 
 // User
-import Register from "./components/User/Register/Register";
+import Register from "./components/User/Registration/Register";
 import Login from "./components/User/Login/Login";
 import Profile from "./components/User/Profile/Profile";
 
