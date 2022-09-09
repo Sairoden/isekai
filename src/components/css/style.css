@@ -1,4 +1,5 @@
 .about,
+.contactus,
 .categories,
 .subscribe,
 .carousel,
@@ -307,4 +308,43 @@
   .slide-show .box {
     width: 500%;
   }
+}
+
+.col-50{
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+.col{
+  float: left;
+  width: 100%;
+  padding: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.input {
+  width: 100%;
+  height: 60px;
+  padding: 0 10px;
+  border: 1px solid #515151;
+}
+.submit-btn {
+  margin: 10px 0;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+.submit-btn:hover {
+  color: white;
+  background-color: #40a9ff;
+  border: none;
+}
+.txt {
+  height: 100px;
+  padding: 10px;
+  resize: vertical;
 }
