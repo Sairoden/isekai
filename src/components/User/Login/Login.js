@@ -1,11 +1,50 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
-import { EyeInvisibleOutlined, EyeOutlined } from "@ant-design/icons";
-
-import "./login.css";
+import { Link, useNavigate } from "react-router-dom";
+import { useFormik } from "formik";
+import {
+  CloseCircleOutlined,
+  EyeInvisibleOutlined,
+  EyeOutlined,
+} from "@ant-design/icons";
+import { LoginSchema } from "../../schemas";
+import axios from "axios";
 
 const Login = () => {
+  let history = useNavigate();
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    validationSchema: LoginSchema,
+    onSubmit: (data) => {
+      // check if its working
+      // console.log("Form Date", data);
+      // alert(JSON.stringify(values, null, 2));
+      const url = "http://localhost/reactjs/login.php";
+      axios({
+        method: "post",
+        url: url,
+        headers: { "Content-Type": "multipart/form-data" },
+        data: data,
+      })
+        .then(function (response) {
+          window.localStorage.setItem("FirstName", response.data.firstname);
+          window.localStorage.setItem("LastName", response.data.lastname);
+          window.localStorage.setItem("Email", response.data.email);
+          console.log(response.data);
+          // console.log(response);
+          alert("Login successful.");
+          // history(`/login`);
+        })
+        .catch((error) => {
+          console.log(error);
+          setWarningSign(true);
+        });
+    },
+  });
+  // console.log(formik);
+  // show/hide password
   const [PasswordType, setPasswordType] = useState("password");
   function togglePasswordType() {
     if (PasswordType === "password") {
@@ -14,19 +53,58 @@ const Login = () => {
       setPasswordType("password");
     }
   }
+
+  // show/hide unsuccessful login
+  const [WarningSign, setWarningSign] = useState(false);
+  function toggleWarningSign() {
+    if (WarningSign) {
+      setWarningSign(false);
+    }
+    if (formik.touched.email || formik.touched.password) {
+      setWarningSign(false);
+    }
+  }
   return (
     <div className="login">
       <h1 className="heading">LOGIN</h1>
       <p className="sub-heading">Please enter your e-mail and password:</p>
-      <form>
+      <form onSubmit={formik.handleSubmit} autoComplete="true">
+        {/* error message */}
+        {WarningSign ? (
+          <div className={WarningSign ? "show" : "hide"}>
+            <div className="error-msg">
+              <h3>Login not successful</h3>
+              <button type="button" onClick={toggleWarningSign}>
+                <CloseCircleOutlined style={{ fontSize: "20px" }} />
+              </button>
+            </div>
+          </div>
+        ) : (
+          ""
+        )}
+        {/* email */}
         <div className="bundle">
           <div>
             <label htmlFor="email">
               <h3 className="label">Email</h3>
             </label>
           </div>
-          <input type="text" id="email" />
+          <input
+            type="text"
+            id="email"
+            className={
+              formik.errors.email && formik.touched.email ? "input-error" : ""
+            }
+            value={formik.values.email}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            onClick={toggleWarningSign}
+          />
+          {formik.errors.email && formik.touched && (
+            <p className="error">{formik.errors.email}</p>
+          )}
         </div>
+        {/* password */}
         <div className="bundle">
           <div>
             <label htmlFor="password">
@@ -37,10 +115,24 @@ const Login = () => {
             <input
               type={PasswordType}
               id="password"
-              className="input-password"
-              required
+              className={
+                formik.errors.password && formik.touched.password
+                  ? "input-error"
+                  : ""
+              }
+              value={formik.values.password}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              onClick={toggleWarningSign}
             />
-            <button type="button" onClick={togglePasswordType}>
+            {formik.errors.password && formik.touched.password && (
+              <p className="error">{formik.errors.password}</p>
+            )}
+            <button
+              type="button"
+              className="password"
+              onClick={togglePasswordType}
+            >
               {PasswordType === "password" ? (
                 <EyeInvisibleOutlined
                   style={{ fontSize: "20px" }}
@@ -55,7 +147,13 @@ const Login = () => {
             </button>
           </div>
         </div>
-        <button className="submit-btn">LOGIN</button>
+        <button
+          // disabled={formik.isSubmitting}
+          type="submit"
+          className="submit-btn"
+        >
+          LOGIN
+        </button>
       </form>
       <div>
         <p>
