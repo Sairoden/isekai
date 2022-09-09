@@ -3,101 +3,75 @@ import "../css/style.css";
 
 const ContactUs = () => {
   return (
-    <div className="contactus flex-c justify-content-center">
+    <div className="contact-us flex-c justify-content-center">
       <div className="heading">Customer Support</div>
       <div className="sub-heading text-center">
         <p>
-          Use the contact form below for everything regarding your order or issues on the site.
+          Use the contact form below for everything regarding your order or
+          issues on the site.
         </p>
         <p>
           <b>(Returns & exchanges, lost packages, wrong size etc.)</b>
         </p>
       </div>
-      <form className="justify-content-center">
-        <fieldset className="row">
-          <div  className="col-50">
+      <form className=" form justify-content-center">
+        <div className="row">
+          <div className="col-50">
             <div>
-              <label>
-                First Name
+              <label htmlFor="fName">
+                <h3 className="label">First Name</h3>
               </label>
             </div>
-            <input 
-              type="text" 
-              id="fName"
-              className="input"
-              required
-            />
+            <input type="text" id="fName" className="input" required />
           </div>
           <div className="col-50">
             <div>
-              <label>
-                Last Name
+              <label htmlFor="lName">
+                <h3 className="label">Last Name</h3>
               </label>
             </div>
-            <input
-              type="text" 
-              id="lName"
-              className="input" />
+            <input type="text" id="lName" className="input" />
           </div>
-        </fieldset>
-        <fieldset>
+        </div>
+        <div className="row">
           <div className="col-50">
             <div>
-              <label>
-                Email Address
+              <label htmlFor="email">
+                <h3 className="label">Email Address</h3>
               </label>
             </div>
-            <input 
-              type="text" 
-              id="email" 
-              className="input"
-              required
-            />
+            <input type="text" id="email" className="input" required />
           </div>
           <div className="col-50">
             <div>
-              <label>
-                Order Number
+              <label htmlFor="orderNum">
+                {" "}
+                <h3 className="label">Order Number</h3>
               </label>
             </div>
-            <input 
-              type="number" 
-              id="orderNum"
-              className="input"
-              required
-            />
+            <input type="number" id="orderNum" className="input" required />
           </div>
-        </fieldset>
-        <div className="col">
-          <div>
-            <label>
-              Subject
-            </label>
-          </div>
-          <input 
-            type="text" 
-            id="subject"
-            className="input"
-            required
-          />
         </div>
         <div className="col">
           <div>
-            <label>
-              Message
+            <label htmlFor="subject">
+              {" "}
+              <h3 className="label">Subject</h3>
             </label>
           </div>
-          <textarea 
-            id="message"
-            className="txt input"
-          ></textarea>
+          <input type="text" id="subject" className="input" required />
         </div>
         <div className="col">
-          <input
-            type="submit" 
-            value="Submit"
-            className="submit-btn"
-          />
+          <div>
+            <label htmlFor="txt">
+              {" "}
+              <h3 className="label">Message</h3>
+            </label>
+          </div>
+          <textarea id="message" className="txt input"></textarea>
+        </div>
+        <div className="col">
+          <input type="submit" value="Submit" className="submit-btn" />
         </div>
       </form>
     </div>
