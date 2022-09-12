@@ -1,4 +1,5 @@
 .about,
+.contact-us,
 .categories,
 .subscribe,
 .carousel,
@@ -37,13 +38,6 @@
   align-items: center;
 }
 /*  */
-.row {
-  margin-top: 50px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 .heading {
   font-family: "Montserrat", sans-serif;
   font-size: 1.9rem;
@@ -54,10 +48,31 @@
   font-size: 1rem;
 }
 .bundle {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .text-center {
   text-align: center;
+}
+.submit-btn {
+  margin: 20px 0;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+.submit-btn:hover {
+  color: white;
+  background-color: #40a9ff;
+  border: none;
+}
+.submit-btn:disabled {
+  opacity: 0.35;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
 }
 /* home */
 .home {
@@ -76,7 +91,47 @@
 .about .sub-heading {
   margin: 20px 0;
 }
+/* contact us */
+.contact-us .form {
+  width: 100%;
+}
+.contact-us .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.contact-us .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contact-us .col-50 {
+  width: 50%;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.contact-us .col {
+  width: 100%;
+  padding: 20px;
+}
+.contact-us .txt {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  resize: vertical;
+}
 /* categories */
+.categories .row,
+.profile .row {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .categories .row1 .col {
   width: 50%;
   height: 100%;
@@ -217,11 +272,44 @@
   width: 50vh;
 }
 .login input,
-.register input {
+.register input,
+.contact-us input {
   width: 100%;
   height: 40px;
   padding: 0 10px;
   border: 1px solid #515151;
+}
+.error {
+  color: #fc8181;
+}
+input.input-error,
+select.input-error {
+  border-color: #fc8181;
+}
+.error-msg {
+  width: 100%;
+  height: 25px;
+  color: white;
+  position: relative;
+  height: 40px;
+  padding: 20px;
+  background-color: #fc8181;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.error-msg h3 {
+  margin: 0;
+  color: white;
+}
+.error-msg button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 .login a,
 .register a {
@@ -235,7 +323,7 @@
   position: relative;
   height: 40px;
 }
-.password-holder button {
+button.password {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -278,6 +366,14 @@
   .foot .col {
     width: 50%;
   }
+  .contact-us .col-50 {
+    width: 100%;
+  }
+  .profile .col:first-child,
+  .profile .col:last-child {
+    width: 45%;
+    padding: 10px 0;
+  }
 }
 @media screen and (max-width: 425px) {
   .foot .box {
@@ -289,6 +385,14 @@
   }
   .foot .sub-heading {
     text-align: center;
+  }
+  .profile .row {
+    flex-direction: column;
+  }
+  .profile .col:first-child,
+  .profile .col:last-child {
+    width: 100%;
+    padding: 10px 0;
   }
 }
 @media screen and (min-width: 1441px) {
