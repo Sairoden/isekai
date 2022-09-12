@@ -218,11 +218,15 @@ const Nav = () => {
           />
         </div>
         <div className="nav_icons">
-          <Link to="/login">
-            <UserOutlined className="nav_icon stay" />
+          <Link to="/login" className="nav_icon stay">
+            <UserOutlined />
           </Link>
-          <HeartFilled className="nav_icon heart" />
-          <IconFont type="icon-shoppingcart" className="nav_icon stay" />
+          <Link to="/favorite" className="nav_icon heart">
+            <HeartFilled />
+          </Link>
+          <Link to="/cart" className="nav_icon stay">
+            <IconFont type="icon-shoppingcart" />
+          </Link>
         </div>
       </div>
       <Outlet />

@@ -87,9 +87,10 @@
   margin: 1%;
 }
 .nav_container .nav_icon {
-  margin-top: 4%;
-  margin-left: 10%;
+  margin-bottom: 1%;
+  margin-left: 5%;
   white-space: nowrap;
+  margin-right: 5%;
 }
 .nav_container .nav_icon .stay {
   position: relative;
