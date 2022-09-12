@@ -1,0 +1,238 @@
+.product_container {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.product_image {
+  width: 35%;
+}
+.right {
+  margin: 1%;
+  width: 18.3%;
+}
+.top_right p {
+  letter-spacing: 0.1em;
+  color: #53585f;
+  font-size: 1.2rem;
+}
+.product-price {
+    
+}
+.top_right p:first-child {
+  font-weight: 600;
+}
+.top_right p:nth-child(2) {
+  font-weight: 700;
+}
+.top_right .fourPayments {
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+}
+
+.top_right .fourPayments span {
+  font-weight: 700;
+}
+
+quadpay-widget {
+  font-size: 0.8rem;
+}
+
+.top_right .size {
+  font-size: 1rem;
+}
+
+.top_right .size_container {
+  display: flex;
+  justify-content: space-between;
+}
+.top_right .size_container img {
+  width: 25%;
+}
+
+.top_right .size_container .size_container_right {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+  height: 25px;
+  text-align: center;
+}
+
+.top_right .size_container .size_container_right button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.modal_tables {
+  overflow-y: scroll;
+  height: 500px;
+  margin-top: 3%;
+}
+
+.ant-modal-content .ant-modal-body .modal_table {
+  margin: 5%;
+}
+
+.ant-modal-content .ant-modal-body .modal_header {
+  text-align: center;
+  margin-top: 1%;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.ant-table-thead > tr > th {
+  background: #000000;
+  color: #ffffff;
+}
+
+.ant-table-content .ant-table-tbody .ant-table-row .ant-table-cell:first-child {
+  font-weight: 500;
+}
+
+.top_right .radio_button {
+  width: 334px;
+}
+
+.ant-radio-button-wrapper {
+  margin: 1%;
+  width: 60px;
+  text-align: center;
+}
+.phone_button {
+  width: 150px;
+}
+.ant-radio-button-wrapper:hover {
+  color: #000000;
+}
+.ant-radio-button-wrapper .ant-radio-button-checked {
+  background: #000000;
+  border: #53585f;
+}
+.ant-radio-button-wrapper .ant-radio-button-checked:hover {
+  color: #ffffff;
+}
+.ant-radio-group-solid
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  background: #53585f !important;
+  border-color: #ffffff !important;
+}
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover::before {
+  background: none;
+}
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+  background: none;
+}
+
+.cart_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.cart_container .cart_button {
+  background: #000000;
+  color: #ffffff;
+  padding: 3%;
+  width: 80%;
+  text-align: center;
+  border: 1px solid #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.cart_container .cart_button:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.cart_container .heart_button {
+  width: 15%;
+  background: none;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.cart_container .heart_button svg {
+  width: 25px;
+  height: 25px;
+  color: #53585f;
+}
+
+.shipping {
+  line-height: 2;
+  width: 100%;
+  margin: 2%;
+}
+
+.shipping p {
+  font-size: 10px;
+  letter-spacing: 0.01em;
+  margin: 0 !important;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+}
+.shipping p img {
+  width: 7%;
+  padding-right: 8px;
+}
+
+.random_product {
+  background-color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.random_product .title {
+  font-size: 1.6rem;
+  font-family: "Knewave", cursive;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 3%;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.random_product p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.05em;
+  margin: 1%;
+}
+.random_product .container {
+  margin: 1%;
+}
+
+.similar_products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.similar_products .title {
+  font-size: 1.6rem;
+  font-family: "Knewave", cursive;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 3%;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.similar_products p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.05em;
+  margin: 1%;
+}
+
+.similar_products .container {
+  margin: 1% 0 3% 0;
+}

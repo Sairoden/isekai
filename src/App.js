@@ -52,6 +52,9 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from "./components/AboutUs/ContactUs";
 import React from "react";
 
+// Products
+import AirpodCaseProductPage from "./components/Products/AirpodCaseProductPage";
+
 function App() {
   return (
     <Routes>
@@ -161,9 +164,15 @@ function App() {
           element={<SailorMoon />}
         />
 
-        {/* About Us */}
+        {/* ABOUT US */}
         <Route path="/help/about-us" element={<AboutUs />} />
         <Route path="/help/contact-us" element={<ContactUs />} />
+
+        {/* PRODUCTS */}
+        <Route
+          path="/collections/anime-airpod-1-2-pro-cases/products/:id"
+          element={<AirpodCaseProductPage />}
+        />
       </Route>
       <Route path="/" element={<Footer />} />
     </Routes>
