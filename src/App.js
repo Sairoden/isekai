@@ -55,9 +55,6 @@ import React from "react";
 // Favorite Page
 import Favorite from "./components/Favorite/Favorite";
 
-// Cart
-import Cart from "./components/Cart/Cart";
-
 // Products
 import AirpodCaseProductPage from "./components/Products/AirpodCaseProductPage";
 
@@ -173,9 +170,6 @@ function App() {
         {/* ABOUT US */}
         <Route path="/help/about-us" element={<AboutUs />} />
         <Route path="/help/contact-us" element={<ContactUs />} />
-
-        {/* CART */}
-        <Route path="/cart" element={<Cart />} />
 
         {/* FAVORITE */}
         <Route path="/favorite" element={<Favorite />} />

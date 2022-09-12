@@ -24,7 +24,7 @@ const AirpodCaseProductPage = () => {
   useEffect(() => {
     setFilteredProduct(
       data.find(item => {
-        return item.id === id;
+        return item.id == id;
       })
     );
   }, [id]);

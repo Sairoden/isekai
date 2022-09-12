@@ -96,6 +96,10 @@
   position: relative;
 }
 
+.cart {
+  /* CART CSS */
+}
+
 .nav_container .nav_icon .heart {
   margin: 10rem !important;
 }

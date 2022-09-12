@@ -224,9 +224,10 @@ const Nav = () => {
           <Link to="/favorite" className="nav_icon heart">
             <HeartFilled />
           </Link>
-          <Link to="/cart" className="nav_icon stay">
+
+          <button className="nav_icon stay cart">
             <IconFont type="icon-shoppingcart" />
-          </Link>
+          </button>
         </div>
       </div>
       <Outlet />
