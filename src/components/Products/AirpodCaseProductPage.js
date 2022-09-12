@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { apparel, homegoods, techAccessories } from "../../data";
 import Footer from "../Footer/Footer";
 import Card from "./Card/Card";
-import ScrollTo from "react-scroll-into-view";
 
 import { HeartOutlined } from "@ant-design/icons";
 import "./ProductPage.css";
@@ -16,16 +15,6 @@ const initialState = techAccessories;
 const AirpodCaseProductPage = () => {
   const { id } = useParams();
   const [data] = useState(initialState);
-  const [standardShipping, setStandardShipping] = useState({
-    dayName: null,
-    month: null,
-    dayNumber: null,
-  });
-  const [overnightShipping, setOvernightShipping] = useState({
-    dayName: null,
-    month: null,
-    dayNumber: null,
-  });
   const [randomProduct, setRandomProduct] = useState([]);
   const [randomApparel, setRandomApparel] = useState([]);
   const [filteredProduct, setFilteredProduct] = useState([]);
@@ -39,69 +28,6 @@ const AirpodCaseProductPage = () => {
       })
     );
   }, [id]);
-
-  const today = new Date();
-  var standard = new Date(today);
-  standard.setDate(standard.getDate() + 5);
-
-  var overnight = new Date(today);
-  overnight.setDate(overnight.getDate() + 1);
-
-  var standardDay = standard.getDay();
-  var overnightDay = overnight.getDay();
-
-  const dayOfTheWeek = value => {
-    if (value === 0) {
-      return "Sun";
-    } else if (value === 1) {
-      return "Mon";
-    } else if (value === 2) {
-      return "Tues";
-    } else if (value === 3) {
-      return "Wed";
-    } else if (value === 4) {
-      return "Thur";
-    } else if (value === 5) {
-      return "Fri";
-    } else if (value === 6) {
-      return "Sat";
-    }
-  };
-
-  let monthNames = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sept",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
-
-  let standardMonth = monthNames[standard.getMonth()];
-  let overnightMonth = monthNames[overnight.getMonth()];
-  let standardDate = standard.getDate();
-
-  useEffect(() => {
-    setStandardShipping({
-      dayName: dayOfTheWeek(standardDay),
-      month: standardMonth,
-      dayNumber: standardDate,
-    });
-  }, [standardDate, standardDay, standardMonth]);
-
-  useEffect(() => {
-    setOvernightShipping({
-      dayName: dayOfTheWeek(overnightDay),
-      month: overnightMonth,
-      dayNumber: overnight.getDate(),
-    });
-  }, [overnightDay, overnightMonth]);
 
   useEffect(() => {
     setRandomProduct(
@@ -122,7 +48,7 @@ const AirpodCaseProductPage = () => {
         <div className="right">
           <div className="top_right">
             <p>{filteredProduct.name}</p>
-            <p className="product-price">₱{filteredProduct.price} Php</p>
+            <p className="product-price">₱{filteredProduct.price} PHP</p>
             <p className="fourPayments">
               <quadpay-widget className="quadpay" logoColor="#1d75ec" />
             </p>
@@ -134,24 +60,6 @@ const AirpodCaseProductPage = () => {
             <button className="heart_button">
               <HeartOutlined className="heart" />
             </button>
-          </div>
-          <div className="shipping">
-            <p>
-              <img
-                src={process.env.PUBLIC_URL + "/assets/icons/travelling.svg"}
-                alt="traveling"
-              />
-              Get it by {standardShipping.dayName}, {standardShipping.month}{" "}
-              {standardShipping.dayNumber} with standard shipping
-            </p>
-            <p>
-              <img
-                src={process.env.PUBLIC_URL + "/assets/icons/rocket.svg"}
-                alt="rocket"
-              />
-              Get it by {overnightShipping.dayName}, {overnightShipping.month}{" "}
-              {overnightShipping.dayNumber} with overnight shipping
-            </p>
           </div>
         </div>
       </div>
@@ -205,14 +113,12 @@ const AirpodCaseProductPage = () => {
                 className="link overlay"
                 key={item.id}
               >
-                <ScrollTo selector={`#product`}>
-                  <Card
-                    className="product_card"
-                    mini={"miniTop"}
-                    item={item}
-                    key={item.id}
-                  />
-                </ScrollTo>
+                <Card
+                  className="product_card"
+                  mini={"miniTop"}
+                  item={item}
+                  key={item.id}
+                />
               </Link>
             );
           })}
@@ -268,14 +174,12 @@ const AirpodCaseProductPage = () => {
                 className="link overlay"
                 key={item.id}
               >
-                <ScrollTo selector={`#product`}>
-                  <Card
-                    className="product_card"
-                    mini={"mini"}
-                    item={item}
-                    key={item.id}
-                  />
-                </ScrollTo>
+                <Card
+                  className="product_card"
+                  mini={"mini"}
+                  item={item}
+                  key={item.id}
+                />
               </Link>
             );
           })}

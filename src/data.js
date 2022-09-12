@@ -260,7 +260,7 @@ import techAccessories37 from "../src/assets/TechAccessories/tabasco-bottle-airp
 
 export const apparel = [
   {
-    id: uuidv4(),
+    id: 6504308169,
     photo: apparel1,
     name: "My Hero Academia Tiles Hoodie",
     price: 806,
@@ -268,7 +268,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4867030741,
     photo: apparel2,
     name: "Darling In The Franxx Eyes Hoodie",
     price: 673,
@@ -276,7 +276,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2624122642,
     photo: apparel3,
     name: "Attack On Titan Levi Face Hoodie",
     price: 801,
@@ -284,7 +284,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 1316892039,
     photo: apparel4,
     name: "Demon Slayer Tanjiro Hoodie",
     price: 395,
@@ -292,7 +292,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6268686740,
     photo: apparel5,
     name: "Naruto Sensei Hoodie",
     price: 512,
@@ -300,7 +300,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3377026011,
     photo: apparel6,
     name: "Hunter X Hunter XX Hoodie",
     price: 623,
@@ -308,7 +308,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9718658987,
     photo: apparel7,
     name: "Hunter X Hunter Killua Hand Hoodie",
     price: 413,
@@ -316,7 +316,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4055888790,
     photo: apparel8,
     name: "Cartoon Goku Hoodie",
     price: 753,
@@ -324,7 +324,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2147082581,
     photo: apparel9,
     name: "Darling In The Franxx Hiro X Zero Two Hoodie",
     price: 718,
@@ -332,7 +332,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4330969646,
     photo: apparel10,
     name: "Hunter X Hunter Faces Shirt",
     price: 852,
@@ -340,7 +340,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5078234215,
     photo: apparel11,
     name: "Naruto Akatsuki Hoodie",
     price: 367,
@@ -348,7 +348,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9156798506,
     photo: apparel12,
     name: "Sailor Moon Peace Hoodie",
     price: 732,
@@ -356,7 +356,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8012856847,
     photo: apparel13,
     name: "Vintage Vaporwave Palm Trees Shirt",
     price: 563,
@@ -364,7 +364,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4470939854,
     photo: apparel14,
     name: "Demon Slayer Digital Tanjiro Shirt",
     price: 672,
@@ -372,7 +372,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2729097045,
     photo: apparel15,
     name: "Anime City Hoodie",
     price: 932,
@@ -380,7 +380,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9429172393,
     photo: apparel16,
     name: "Attack On Titan Eyes Hoodie",
     price: 827,
@@ -388,7 +388,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8704279970,
     photo: apparel17,
     name: "Attack On Titan Text Shirt",
     price: 600,
@@ -396,7 +396,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9584294344,
     photo: apparel18,
     name: "Demon Slayer Group Hoodie",
     price: 718,
@@ -404,7 +404,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 1188833499,
     photo: apparel19,
     name: "Hunter X Hunter Hisoka Hoodie",
     price: 587,
@@ -412,7 +412,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2490376780,
     photo: apparel20,
     name: "It's All In Your Head Vaporwave Shirt",
     price: 748,
@@ -420,7 +420,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5663086550,
     photo: apparel21,
     name: "Japanese Sad Girl Vaporwave Shirt",
     price: 245,
@@ -428,7 +428,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9226810330,
     photo: apparel22,
     name: "Naruto Itachi Comic Hoodie",
     price: 257,
@@ -436,7 +436,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5547361218,
     photo: apparel23,
     name: "One Piece Brutal Hoodie",
     price: 371,
@@ -444,7 +444,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6439121081,
     photo: apparel24,
     name: "Oversized Kawaii Alien Hoodie",
     price: 517,
@@ -452,7 +452,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3101524519,
     photo: apparel25,
     name: "Retro Claw Machine Shirt",
     price: 500,
@@ -460,7 +460,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8069504478,
     photo: apparel26,
     name: "Sailor Moon Luna Hoodie",
     price: 961,
@@ -468,7 +468,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 1580570611,
     photo: apparel27,
     name: "Vaporwave Girl Shirt",
     price: 127,
@@ -476,7 +476,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7070371030,
     photo: apparel28,
     name: "White Black Senpai Hoodie",
     price: 582,
@@ -484,7 +484,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9329025767,
     photo: apparel29,
     name: "Sailor Moon Socks 6 Pairs",
     price: 479,
@@ -492,7 +492,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9312402788,
     photo: apparel30,
     name: "Rude Shy Girl Hoodie",
     price: 974,
@@ -500,7 +500,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8291125405,
     photo: apparel31,
     name: "Attack On Titan Japanese Crest Hoodie",
     price: 612,
@@ -508,7 +508,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5412271640,
     photo: apparel32,
     name: "Darling In The Franxx Vaporwave Hoodie",
     price: 271,
@@ -516,7 +516,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3000878446,
     photo: apparel33,
     name: "Demon Slayer Cat Hoodie",
     price: 713,
@@ -524,7 +524,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3397712744,
     photo: apparel34,
     name: "Attack On Titan Levi Hoodie",
     price: 378,
@@ -532,7 +532,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2685568846,
     photo: apparel35,
     name: "Bear Cosplay Hoodie",
     price: 600,
@@ -540,7 +540,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3871991804,
     photo: apparel36,
     name: "Censored Angel Shirt",
     price: 678,
@@ -548,7 +548,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6222848138,
     photo: apparel37,
     name: "Dragon Ball Z Goku Stripe Logo Shirt",
     price: 728,
@@ -556,7 +556,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6980893649,
     photo: apparel38,
     name: "Hunter X Hunter Hisoka Kawaii Shirt",
     price: 527,
@@ -564,7 +564,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2474396510,
     photo: apparel39,
     name: "My Hero Academia Toga Waifu Smile Hoodie",
     price: 612,
@@ -572,7 +572,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5625937564,
     photo: apparel40,
     name: "Naruto Cloud Socks",
     price: 823,
@@ -580,7 +580,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3606946374,
     photo: apparel41,
     name: 472,
     price: 34.99,
@@ -588,7 +588,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3828592000,
     photo: apparel42,
     name: "Hunter X Hunter Boxed Kurapika Hoodie",
     price: 781,
@@ -596,7 +596,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4591716862,
     photo: apparel43,
     name: "Darling In The Franxx Darling Shirt",
     price: 128,
@@ -604,7 +604,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7831321408,
     photo: apparel44,
     name: "Hunter X Hunter Killua Face Hoodie",
     price: 582,
@@ -612,7 +612,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2862258066,
     photo: apparel45,
     name: "My Hero Academia Suzy Hoodie",
     price: 713,
@@ -620,7 +620,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3241247652,
     photo: apparel46,
     name: "My Hero Academia Shoto Todoroki Face Hoodie",
     price: 482,
@@ -628,7 +628,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5096847884,
     photo: apparel47,
     name: "Naruto Uchiha Hoodie",
     price: 823,
@@ -636,7 +636,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5850685593,
     photo: apparel48,
     name: "My Hero Academia Mina Waifu Hoodie",
     price: 612,
@@ -644,7 +644,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7214822447,
     photo: apparel49,
     name: "I Need You Vaporwave Shirt",
     price: 512,
@@ -652,7 +652,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 1181908875,
     photo: apparel50,
     name: "Senpai Purple Hair Girl Shirt",
     price: 782,
@@ -660,7 +660,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3585652349,
     photo: apparel51,
     name: "Vaporwave Sailor Moon Shirt",
     price: 471,
@@ -668,7 +668,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 1943017058,
     photo: apparel52,
     name: "Sad Panda Vaporwave Girl Shirt",
     price: 182,
@@ -676,7 +676,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3247767142,
     photo: apparel53,
     name: "Naruto Shikamaru Nara Shirt",
     price: 723,
@@ -684,7 +684,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5025917816,
     photo: apparel54,
     name: "N64 Vaporwave Hoodie",
     price: 451,
@@ -692,7 +692,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6912257143,
     photo: apparel55,
     name: "My Hero Academia Toga Sugoi Schoolgirl Hoodie",
     price: 572,
@@ -700,7 +700,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9821214059,
     photo: apparel56,
     name: "Japan.exe Shirt",
     price: 182,
@@ -708,7 +708,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3143545513,
     photo: apparel57,
     name: "Hunter X Hunter Killua Back Print Hoodie",
     price: 261,
@@ -716,7 +716,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9219588392,
     photo: apparel58,
     name: "Dragon Ball Z Pocket Logo Hoodie",
     price: 346,
@@ -724,7 +724,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5435414233,
     photo: apparel59,
     name: "Darling In The Franxx Retro Shirt",
     price: 147,
@@ -732,7 +732,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7709340695,
     photo: apparel60,
     name: "Dragon Ball Z Goku Hoodie",
     price: 158,
@@ -740,7 +740,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6041576116,
     photo: apparel61,
     name: "Jojos Bizarre Adventure Neon Shirt",
     price: 921,
@@ -748,7 +748,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5470967557,
     photo: apparel62,
     name: "Goku Sun Shirt",
     price: 582,
@@ -756,7 +756,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6254741698,
     photo: apparel63,
     name: "Hunter X Hunter Eyes Hoodie",
     price: 687,
@@ -764,7 +764,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5149590488,
     photo: apparel64,
     name: "Forever Online Vaporwave Shirt",
     price: 827,
@@ -772,7 +772,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6664168237,
     photo: apparel65,
     name: "Demon Slayer Kimetsu No Yaiba Sword Shirt",
     price: 871,
@@ -780,7 +780,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8263107073,
     photo: apparel66,
     name: "One Piece Hemmm Hoodie",
     price: 958,
@@ -788,7 +788,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3937990656,
     photo: apparel67,
     name: "Sailor Moon Hug Hoodie",
     price: 572,
@@ -796,7 +796,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5701129279,
     photo: apparel68,
     name: "Skip Ad Vaporwave Shirt",
     price: 958,
@@ -804,7 +804,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 1309876359,
     photo: apparel69,
     name: "Vaporwave Girl Hoodie",
     price: 138,
@@ -812,7 +812,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2080423095,
     photo: apparel70,
     name: "Sad Anime Cigarette Vaporwave Hoodie",
     price: 892,
@@ -820,7 +820,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2316838288,
     photo: apparel71,
     name: "Sailor Moon Vaporwave Hoodie",
     price: 782,
@@ -828,7 +828,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5305628850,
     photo: apparel72,
     name: "Japanese N64 Vaporwave Shirt",
     price: 702,
@@ -836,7 +836,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5452970276,
     photo: apparel73,
     name: "Naruto Itachi Manga Hoodie",
     price: 103,
@@ -844,7 +844,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7177819400,
     photo: apparel74,
     name: "Naruto Flowers Baseball Jacket",
     price: 187,
@@ -852,7 +852,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9807460544,
     photo: apparel75,
     name: "Sad Boy Arizona Shirt",
     price: 349,
@@ -860,7 +860,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4024699513,
     photo: apparel76,
     name: "One Piece Boat Fight Shirt",
     price: 729,
@@ -868,7 +868,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4406546420,
     photo: apparel77,
     name: "Sad Digital Girl Hoodie",
     price: 693,
@@ -876,7 +876,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7206050000,
     photo: apparel78,
     name: "Hunter X Hunter Hisoka All Over Print Hoodie",
     price: 187,
@@ -884,7 +884,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4925851245,
     photo: apparel79,
     name: "Darling In The Franxx Zero Two Pink Hoodie",
     price: 902,
@@ -892,7 +892,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9600389310,
     photo: apparel80,
     name: "Digital Helios Vaporwave Shirt",
     price: 682,
@@ -900,7 +900,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5122859033,
     photo: apparel81,
     name: "One Piece Fight Hoodie",
     price: 891,
@@ -908,7 +908,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3210041835,
     photo: apparel82,
     name: "Sad Girl Shirt",
     price: 801,
@@ -916,7 +916,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8222406078,
     photo: apparel83,
     name: "Glowing Goku Hoodie",
     price: 273,
@@ -924,7 +924,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4006560738,
     photo: apparel84,
     name: "Hunter X Hunter Hisoka Eyes Hoodie",
     price: 682,
@@ -932,7 +932,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8012471909,
     photo: apparel85,
     name: "Hunter X Hunter Bungee Gum Hoodie",
     price: 501,
@@ -940,7 +940,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6705239341,
     photo: apparel86,
     name: "Sad Girl Sitting Shirt",
     price: 823,
@@ -948,7 +948,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5564250469,
     photo: apparel87,
     name: "Hunter X Hunter Gon X Killua Duo Shirt",
     price: 791,
@@ -956,7 +956,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2652622421,
     photo: apparel88,
     name: "Attack On Titan Logo Hoodie",
     price: 205,
@@ -964,7 +964,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2100243456,
     photo: apparel89,
     name: "Sailor Moon Bondage Shirt",
     price: 692,
@@ -972,7 +972,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8444547499,
     photo: apparel90,
     name: "Black Helios Vaporwave Hoodie",
     price: 813,
@@ -980,7 +980,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3503191888,
     photo: apparel91,
     name: "Sad Anime Aesthetic Pink Notification Vaporwave Shirt",
     price: 394,
@@ -988,7 +988,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7703920664,
     photo: apparel92,
     name: "Bunny Cosplay Hoodie",
     price: 582,
@@ -996,7 +996,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5811748995,
     photo: apparel93,
     name: "Danganronpa Chiaki Senpai Shirt",
     price: 116,
@@ -1004,7 +1004,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2175598436,
     photo: apparel94,
     name: "Dragon Ball Z Logo Socks",
     price: 307,
@@ -1012,7 +1012,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4555503381,
     photo: apparel95,
     name: "Black Vaporwave Wolves Hoodie",
     price: 104,
@@ -1020,7 +1020,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2900115934,
     photo: apparel96,
     name: "Darling In The Franxx 002 Shirt",
     price: 448,
@@ -1028,7 +1028,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4235203329,
     photo: apparel97,
     name: "Daring In The Franxx Smile Hoodie",
     price: 582,
@@ -1036,7 +1036,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8380920207,
     photo: apparel98,
     name: "Hunter X Hunter Hisoka Hoodie",
     price: 713,
@@ -1044,7 +1044,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6132186574,
     photo: apparel99,
     name: "Senpai Supreme Shirt",
     price: 306,
@@ -1052,7 +1052,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4712800250,
     photo: apparel100,
     name: "Vaporwave 95 Sweater",
     price: 712,
@@ -1060,7 +1060,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7615205881,
     photo: apparel101,
     name: "Hunter X Hunter Hisoka Tears Shirt",
     price: 832,
@@ -1068,7 +1068,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2994423615,
     photo: apparel102,
     name: "Black and White Goku Hoodie",
     price: 259,
@@ -1076,7 +1076,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7404070406,
     photo: apparel103,
     name: "Dragon Ball Z Sayan Logo Hoodie",
     price: 792,
@@ -1084,7 +1084,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7333169974,
     photo: apparel104,
     name: "Digital Sad Girl Eyes Vaporwave Shirt",
     price: 207,
@@ -1093,7 +1093,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6313193468,
     photo: apparel105,
     name: "Hunter X Hunter Faces Hoodie",
     price: 185,
@@ -1101,7 +1101,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3073253906,
     photo: apparel106,
     name: "Tokyo Ghoul Anteiku Half Face Shirt",
     price: 506,
@@ -1109,7 +1109,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5762615604,
     photo: apparel107,
     name: "Naruto Sensei Shirt",
     price: 962,
@@ -1117,7 +1117,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7811188337,
     photo: apparel108,
     name: "Darling In The Franxx Zero Two Darling Hoodie",
     price: 593,
@@ -1125,7 +1125,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8827563335,
     photo: apparel109,
     name: "Holographic Sailor Moon Hoodie",
     price: 261,
@@ -1133,7 +1133,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4523883239,
     photo: apparel110,
     name: "Naruto Itachi Eyes Hoodie",
     price: 751,
@@ -1141,7 +1141,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9518933296,
     photo: apparel111,
     name: "Hunter X Hunter Killua Baka Face Shirt",
     price: 947,
@@ -1149,7 +1149,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3835373053,
     photo: apparel112,
     name: "Sailor Moon Vaporwave Shirt",
     price: 782,
@@ -1157,7 +1157,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 1468870131,
     photo: apparel113,
     name: "Naruto Kakashi Manga Hoodie",
     price: 559,
@@ -1165,7 +1165,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6388404513,
     photo: apparel114,
     name: "Pink Wolves Kawaii Hoodie",
     price: 304,
@@ -1173,7 +1173,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8333599394,
     photo: apparel115,
     name: "Hunter X Hunter Killua Sluuurp Shirt",
     price: 828,
@@ -1181,7 +1181,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3034711363,
     photo: apparel116,
     name: "Kawaii 3D Style Shirt",
     price: 614,
@@ -1189,7 +1189,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6457920439,
     photo: apparel117,
     name: "Inuyasha Bikini Shirt",
     price: 283,
@@ -1197,7 +1197,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5400915055,
     photo: apparel118,
     name: "Jojos Bizarre Adventure Noriaki Kakyoin Shirt",
     price: 682,
@@ -1205,7 +1205,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7498597505,
     photo: apparel119,
     name: "My Hero Academia Toga Sugoi Crazy Smile Hoodie",
     price: 173,
@@ -1213,7 +1213,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4380694861,
     photo: apparel120,
     name: "Naruto Kakashi Hatake Shirt",
     price: 792,
@@ -1221,7 +1221,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6854803369,
     photo: apparel121,
     name: "Junji Ito Manga Eyes Shirt",
     price: 461,
@@ -1229,7 +1229,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9676120749,
     photo: apparel122,
     name: "My Hero Academia Bakugou Hoodie",
     price: 488,
@@ -1237,7 +1237,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4995047403,
     photo: apparel123,
     name: "Kawaii In The Streets Shirt",
     price: 129,
@@ -1245,7 +1245,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9961690139,
     photo: apparel124,
     name: "Naruto Deidara Manga Shirt",
     price: 799,
@@ -1253,7 +1253,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7908255277,
     photo: apparel125,
     name: "My Hero Academia Toga Sugoi Hoodie",
     price: 347,
@@ -1261,7 +1261,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2577104414,
     photo: apparel126,
     name: "One Piece Ace Dark Hoodie",
     price: 821,
@@ -1269,7 +1269,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 1627316803,
     photo: apparel127,
     name: "Pink Helios Vaporwave Hoodie",
     price: 672,
@@ -1277,7 +1277,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7869604909,
     photo: apparel128,
     name: "My Hero Academia Dabi Villains Hoodie",
     price: 485,
@@ -1285,7 +1285,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 1542015368,
     photo: apparel129,
     name: "Naruto Akatsuki Cloud Symbol Pullover Hoodie",
     price: 528,
@@ -1293,7 +1293,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3390472794,
     photo: apparel130,
     name: "Tokyo Ghoul Sleeve Print Hoodie",
     price: 106,
@@ -1301,7 +1301,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7686335347,
     photo: apparel131,
     name: "One Piece Chibi Luffy Wanted Hoodie",
     price: 399,
@@ -1309,7 +1309,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7041585005,
     photo: apparel132,
     name: "My Hero Academia Toga Laughing Hoodie",
     price: 571,
@@ -1317,7 +1317,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6476972493,
     photo: apparel133,
     name: "Vaporwave Fiji Bottle Shirt",
     price: 494,
@@ -1325,7 +1325,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7303895603,
     photo: apparel134,
     name: "Tokyo Ghoul Kaneki Mask Shirt",
     price: 318,
@@ -1333,7 +1333,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9764432652,
     photo: apparel135,
     name: "Sailor Moon Shirt",
     price: 251,
@@ -1341,7 +1341,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4298574458,
     photo: apparel136,
     name: "Hunter X Hunter Killua For President Shirt",
     price: 108,
@@ -1349,7 +1349,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9198901250,
     photo: apparel137,
     name: "Naruto Vaporwave Kakashi Shirt",
     price: 255,
@@ -1357,7 +1357,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7728323925,
     photo: apparel138,
     name: "Dragon Ball Z Retro Gohan Shirt",
     price: 395,
@@ -1365,7 +1365,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3945196438,
     photo: apparel139,
     name: "Darling In The Franxx Zero Two Smile Hoodie",
     price: 782,
@@ -1373,7 +1373,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2195963022,
     photo: apparel140,
     name: "One Piece Luffy Flag Hoodie",
     price: 691,
@@ -1381,7 +1381,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9899435652,
     photo: apparel141,
     name: "Senpai Schoolgirl Hoodie",
     price: 781,
@@ -1389,7 +1389,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8825590315,
     photo: apparel142,
     name: "Tokyo Ghoul Kaneki Split Face Shirt",
     price: 520,
@@ -1397,7 +1397,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9791958104,
     photo: apparel143,
     name: "Death Note Black Metal Shirt",
     price: 179,
@@ -1405,7 +1405,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6031309122,
     photo: apparel144,
     name: "Naruto Symbols Hoodie",
     price: 923,
@@ -1413,7 +1413,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9865557662,
     photo: apparel145,
     name: "Sailor Moon Kawaii Hoodie",
     price: 682,
@@ -1421,7 +1421,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3395313807,
     photo: apparel146,
     name: "Tokyo Ghoul Kaneki Eyes Shirt",
     price: 410,
@@ -1429,7 +1429,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3630091310,
     photo: apparel147,
     name: "Attack On Titan Fire Crest Shirt",
     price: 271,
@@ -1437,7 +1437,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5801814169,
     photo: apparel148,
     name: "One Piece Ramen Hoodie",
     price: 104,
@@ -1445,7 +1445,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6698029454,
     photo: apparel149,
     name: "Hunter X Hunter Hisoka Red Card Shirt",
     price: 508,
@@ -1453,7 +1453,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7648328322,
     photo: apparel150,
     name: "One Piece Ok Hoodie",
     price: 678,
@@ -1461,7 +1461,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8729581148,
     photo: apparel151,
     name: "Sailor Moon Friends Shirt",
     price: 927,
@@ -1469,7 +1469,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3975766082,
     photo: apparel152,
     name: "Vaporwave Japanese Wave Hoodie",
     price: 781,
@@ -1477,7 +1477,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3011314290,
     photo: apparel153,
     name: "Attack On Titan Japanese Text Shirt",
     price: 508,
@@ -1485,7 +1485,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3800612998,
     photo: apparel154,
     name: "Sailor Moon Grl Pwr Shirt",
     price: 107,
@@ -1493,7 +1493,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8420444378,
     photo: apparel155,
     name: "Attack On Titan Levi Shirt",
     price: 289,
@@ -1501,7 +1501,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4550308542,
     photo: apparel156,
     name: "Attack On Titan Levi Tri Tone Shirt",
     price: 717,
@@ -1509,7 +1509,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 1130346986,
     photo: apparel157,
     name: "One Piece Embrace Hoodie",
     price: 401,
@@ -1517,7 +1517,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4526774018,
     photo: apparel158,
     name: "Death Note Retro Misa Shirt",
     price: 392,
@@ -1525,7 +1525,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8183522957,
     photo: apparel159,
     name: "Demon Slayer Vintage Tanjiro Shirt",
     price: 852,
@@ -1533,7 +1533,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5776827605,
     photo: apparel160,
     name: "Vintage Sailor Moon Shirt",
     price: 579,
@@ -1541,7 +1541,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6904648666,
     photo: apparel161,
     name: "Attack On Titan Rose Crest Shirt",
     price: 190,
@@ -1549,7 +1549,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7678790218,
     photo: apparel162,
     name: "One Piece Group Shirt",
     price: 258,
@@ -1557,7 +1557,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3183614352,
     photo: apparel163,
     name: "Hunter X Hunter Vintage Killua Shirt",
     price: 507,
@@ -1565,7 +1565,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5485327445,
     photo: apparel164,
     name: "Sailor Moon Flower Shirt",
     price: 110,
@@ -1573,7 +1573,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 1912665694,
     photo: apparel165,
     name: "Hunter X Hunter Killua X Shirt",
     price: 792,
@@ -1581,7 +1581,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9817922748,
     photo: apparel166,
     name: "Sailor Moon Fight Like A Girl Shirt",
     price: 552,
@@ -1589,7 +1589,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2691752826,
     photo: apparel167,
     name: "One Piece Red Sun Hoodie",
     price: 279,
@@ -1597,7 +1597,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 6809481108,
     photo: apparel168,
     name: "One Piece Wave Hoodie",
     price: 279,
@@ -1605,7 +1605,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3626444318,
     photo: apparel169,
     name: "Hunter X Hunter Tile Shirt",
     price: 819,
@@ -1613,7 +1613,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 5899220598,
     photo: apparel170,
     name: "Attack On Titan Wings Shirt",
     price: 259,
@@ -1621,7 +1621,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 1374168378,
     photo: apparel171,
     name: "Darling In The Franxx Lollipop Shirt",
     price: 618,
@@ -1629,7 +1629,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4512259176,
     photo: apparel172,
     name: "Hunter X Hunter Killua Shirt",
     price: 492,
@@ -1637,7 +1637,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2469086989,
     photo: apparel173,
     name: "Demon Slayer Tanjiro Portrait Shirt",
     price: 168,
@@ -1645,7 +1645,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8780938561,
     photo: apparel174,
     name: "Dragon Ball Z Master Roshi Shirt",
     price: 237,
@@ -1653,7 +1653,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8991816881,
     photo: apparel175,
     name: "Pink Vaporwave Retro Shirt",
     price: 592,
@@ -1661,7 +1661,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4078853592,
     photo: apparel176,
     name: "Hunter X Hunter Killua X Shirt",
     price: 381,
@@ -1669,7 +1669,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 9418040081,
     photo: apparel177,
     name: "Death Note Vaporwave Lawliet Shirt",
     price: 195,
@@ -1677,7 +1677,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 4388622090,
     photo: apparel178,
     name: "Attack On Titan Titanz Shirt",
     price: 278,
@@ -1685,7 +1685,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 8967571559,
     photo: apparel179,
     name: "Sad Anime Vaporwave Cigarette Shirt",
     price: 529,
@@ -1693,7 +1693,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 3236829014,
     photo: apparel180,
     name: "Demon Slayer Retro Nezuko Shirt",
     price: 178,
@@ -1701,7 +1701,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 2795593490,
     photo: apparel181,
     name: "Vaporwave Zero Two Waifu Shirt",
     price: 652,
@@ -1709,7 +1709,7 @@ export const apparel = [
     category: "apparel",
   },
   {
-    id: uuidv4(),
+    id: 7637972864,
     photo: apparel182,
     name: "Vaporwave Nekomancer Shirt",
     price: 521,
@@ -1720,7 +1720,7 @@ export const apparel = [
 
 export const homegoods = [
   {
-    id: uuidv4(),
+    id: 7261222852,
     photo: homegoods1,
     name: "Kawaii Seal Plush Pillow",
     price: 219,
@@ -1728,7 +1728,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 3554024522,
     photo: homegoods2,
     name: "Boba Tea Plush Pillow",
     price: 107,
@@ -1736,7 +1736,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 4908109699,
     photo: homegoods3,
     name: "Kawaii Octopus Plush Pillow",
     price: 467,
@@ -1744,7 +1744,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 1201006797,
     photo: homegoods4,
     name: "Hunter X Hunter Hisoka Star LED Lamp",
     price: 259,
@@ -1752,7 +1752,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 6444481943,
     photo: homegoods5,
     name: "My Hero Academia Dabi LED Lamp",
     price: 781,
@@ -1760,7 +1760,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 8049156010,
     photo: homegoods6,
     name: "Kawaii Baby Panda Body Pillow",
     price: 607,
@@ -1768,7 +1768,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 7045995334,
     photo: homegoods7,
     name: "Attack On Titan Logo LED Lamp",
     price: 258,
@@ -1776,7 +1776,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 6074439178,
     photo: homegoods8,
     name: "Sailor Moon Plush Pillow",
     price: 792,
@@ -1784,7 +1784,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 4191185175,
     photo: homegoods9,
     name: "Rascal Does Not Dream Of Bunny Girl Senpai LED Lamp",
     price: 681,
@@ -1792,7 +1792,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 6056771451,
     photo: homegoods10,
     name: "Hunter X Hunter Killua LED Lamp",
     price: 592,
@@ -1800,7 +1800,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 3464227315,
     photo: homegoods11,
     name: "Sandwich Pillow Plush",
     price: 657,
@@ -1808,7 +1808,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 8379179781,
     photo: homegoods12,
     name: "Sleeping Fox Plush Pillow",
     price: 450,
@@ -1816,7 +1816,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 7747718523,
     photo: homegoods13,
     name: "Demon Slayer Zenitsu LED Lamp",
     price: 572,
@@ -1824,7 +1824,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 6640280132,
     photo: homegoods14,
     name: "Sushi Rice Pillow",
     price: 281,
@@ -1832,7 +1832,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 1867067042,
     photo: homegoods15,
     name: "My Hero Academia Shoto Todoroki LED Lamp",
     price: 234,
@@ -1840,7 +1840,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 1115913234,
     photo: homegoods16,
     name: "Hunter X Hunter Hisoka LED Lamp",
     price: 329,
@@ -1848,7 +1848,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 8541438074,
     photo: homegoods17,
     name: "Totoro Plush Pillow",
     price: 521,
@@ -1856,7 +1856,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 6891802118,
     photo: homegoods18,
     name: "Toto Pillow And Blanket Combo",
     price: 392,
@@ -1864,7 +1864,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 4235635944,
     photo: homegoods19,
     name: "Naruto Itachi Uchiha LED Lamp",
     price: 273,
@@ -1872,7 +1872,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 1700990465,
     photo: homegoods20,
     name: "Naruto Kakashi LED Lamp",
     price: 813,
@@ -1880,7 +1880,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 9384043930,
     photo: homegoods21,
     name: "Naruto LED Lamp",
     price: 682,
@@ -1888,7 +1888,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 7768206556,
     photo: homegoods22,
     name: "Kawaii Sushi Plush Pillow",
     price: 951,
@@ -1896,7 +1896,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 8028299320,
     photo: homegoods23,
     name: "One Piece Peace LED Lamp",
     price: 482,
@@ -1904,7 +1904,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 7020900977,
     photo: homegoods24,
     name: "Ramen Bag Pillow And Blanket Set",
     price: 531,
@@ -1912,7 +1912,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 9220384758,
     photo: homegoods25,
     name: "Naruto Logo LED Lamp",
     price: 725,
@@ -1920,7 +1920,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 8774835461,
     photo: homegoods26,
     name: "One Piece Roronoa Zoro LED Lamp",
     price: 492,
@@ -1928,7 +1928,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 2543074454,
     photo: homegoods27,
     name: "Cheesy Puffs Pillow Plush",
     price: 527,
@@ -1936,7 +1936,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 6783535296,
     photo: homegoods28,
     name: "Hunter X Hunter Hisoka Playing Card LED Lamp",
     price: 723,
@@ -1944,7 +1944,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 2406114250,
     photo: homegoods29,
     name: "Colored Sushi Plush Pillow",
     price: 581,
@@ -1952,7 +1952,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 3939398680,
     photo: homegoods30,
     name: "Fried Egg Plush Pillow",
     price: 429,
@@ -1960,7 +1960,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 1076552192,
     photo: homegoods31,
     name: "One Piece Logo LED Lamp",
     price: 513,
@@ -1968,7 +1968,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 1393639905,
     photo: homegoods32,
     name: "Hunter X Hunter LED Lamp",
     price: 194,
@@ -1976,7 +1976,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 8349621014,
     photo: homegoods33,
     name: "Winking Avocado Plush Pillow",
     price: 304,
@@ -1984,7 +1984,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 6308547285,
     photo: homegoods34,
     name: "One Piece Thousand Sunny Ship LED Lamp.jpg",
     price: 719,
@@ -1992,7 +1992,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 9721897190,
     photo: homegoods35,
     name: "Totoro LED Lamp",
     price: 283,
@@ -2000,7 +2000,7 @@ export const homegoods = [
     category: "homegoods",
   },
   {
-    id: uuidv4(),
+    id: 9747452062,
     photo: homegoods36,
     name: "Demon Slayer Logo LED Lamp",
     price: 931,
@@ -2011,7 +2011,7 @@ export const homegoods = [
 
 export const techAccessories = [
   {
-    id: uuidv4(),
+    id: 8074486878,
     photo: techAccessories1,
     name: "Naruto Head Airpod Cases",
     price: 481,
@@ -2019,7 +2019,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 8428560068,
     photo: techAccessories2,
     name: "Sailor Moon Cat Airpod Cases",
     price: 472,
@@ -2027,7 +2027,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 8506989946,
     photo: techAccessories3,
     name: "Vaporwave Driving Iphone Case",
     price: 519,
@@ -2035,7 +2035,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 7185866719,
     photo: techAccessories4,
     name: "One Piece Airpod Cases",
     price: 842,
@@ -2043,7 +2043,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 8998502915,
     photo: techAccessories5,
     name: "Dragon Ball Z Airpod Cases",
     price: 713,
@@ -2051,7 +2051,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 9111891865,
     photo: techAccessories6,
     name: "I Hate You Anime Iphone Case",
     price: 547,
@@ -2059,7 +2059,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 7141222293,
     photo: techAccessories7,
     name: "Dunks Coffee Airpod Case",
     price: 823,
@@ -2067,7 +2067,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 7425746891,
     photo: techAccessories8,
     name: "Vaporwave Girl Anime Iphone Case",
     price: 913,
@@ -2075,7 +2075,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 3742675054,
     photo: techAccessories9,
     name: "Spam Can Airpods Case",
     price: 528,
@@ -2083,7 +2083,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 3849987482,
     photo: techAccessories10,
     name: "Lucky Cat Airpods 1 And 2 Case",
     price: 942,
@@ -2091,7 +2091,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 1318769122,
     photo: techAccessories11,
     name: "Naruto Airpods Pro Cases",
     price: 781,
@@ -2099,7 +2099,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 5024399869,
     photo: techAccessories12,
     name: "Totoro Airpods Case",
     price: 954,
@@ -2107,7 +2107,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 8849502171,
     photo: techAccessories13,
     name: "One Piece Head Airpod Cases",
     price: 592,
@@ -2115,7 +2115,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 5479392971,
     photo: techAccessories14,
     name: "KFC Airpod Case",
     price: 313,
@@ -2123,7 +2123,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 8057554761,
     photo: techAccessories15,
     name: "Vaporwave City Iphone Case",
     price: 105,
@@ -2131,7 +2131,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 4835585693,
     photo: techAccessories16,
     name: "Black Ramen Airpod Case",
     price: 528,
@@ -2139,7 +2139,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 7731195867,
     photo: techAccessories17,
     name: "Vaporwave Car Iphone Case",
     price: 347,
@@ -2147,7 +2147,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 4995979555,
     photo: techAccessories18,
     name: "Dragon Ball Z Face Airpod Cases",
     price: 713,
@@ -2155,7 +2155,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 9206093001,
     photo: techAccessories19,
     name: "Vaporwave Stoop Iphone Case",
     price: 493,
@@ -2163,7 +2163,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 9109087526,
     photo: techAccessories20,
     name: "Vaporwave Rain Iphone Case",
     price: 241,
@@ -2171,7 +2171,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 5856124276,
     photo: techAccessories21,
     name: "Vaporwave Sun Iphone Case",
     price: 751,
@@ -2179,7 +2179,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 8547649445,
     photo: techAccessories22,
     name: "Sushi Rice Airpod Case",
     price: 832,
@@ -2187,7 +2187,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 8856092003,
     photo: techAccessories23,
     name: "Bao Airpod Case",
     price: 692,
@@ -2195,7 +2195,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 1975045158,
     photo: techAccessories24,
     name: "Vaporwave Couple Iphone Case",
     price: 718,
@@ -2203,7 +2203,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 9878228541,
     photo: techAccessories25,
     name: "Flavored Milk Airpod Case",
     price: 681,
@@ -2211,7 +2211,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 6553213790,
     photo: techAccessories26,
     name: "Ghost Iphone Case",
     price: 291,
@@ -2219,7 +2219,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 8372480428,
     photo: techAccessories27,
     name: "Kawaii Girl Anime Iphone Case",
     price: 110,
@@ -2227,7 +2227,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 5724748450,
     photo: techAccessories28,
     name: "My Hero Academia Toga Iphone Case",
     price: 341,
@@ -2235,7 +2235,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 7417993418,
     photo: techAccessories29,
     name: "3D Lollipop Airpod Case",
     price: 271,
@@ -2243,7 +2243,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 5513713094,
     photo: techAccessories30,
     name: "Snickers Airpod Case",
     price: 913,
@@ -2251,7 +2251,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 3405798731,
     photo: techAccessories31,
     name: "Vaporwave Smiling Girl Iphone Case",
     price: 284,
@@ -2259,7 +2259,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 3467978872,
     photo: techAccessories32,
     name: "Donut Airpod Case",
     price: 102,
@@ -2267,7 +2267,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 2014001593,
     photo: techAccessories33,
     name: "Avocado Airpod 1 And 2 Case",
     price: 315,
@@ -2275,7 +2275,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 7201179233,
     photo: techAccessories34,
     name: "Spicy Noodle Cup Airpod Case",
     price: 512,
@@ -2283,7 +2283,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 4889243625,
     photo: techAccessories35,
     name: "Sexy Devil Girl Anime Iphone Case",
     price: 681,
@@ -2291,7 +2291,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 3861251803,
     photo: techAccessories36,
     name: "Vaporwave Staircase Iphone Case",
     price: 903,
@@ -2299,7 +2299,7 @@ export const techAccessories = [
     category: "techAccessories",
   },
   {
-    id: uuidv4(),
+    id: 2802276718,
     photo: techAccessories37,
     name: "Tabasco Bottle Airpod Case",
     price: 249,

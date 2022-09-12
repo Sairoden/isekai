@@ -87,11 +87,16 @@
   margin: 1%;
 }
 .nav_container .nav_icon {
-  margin: 6%;
+  margin-top: 4%;
+  margin-left: 10%;
   white-space: nowrap;
 }
 .nav_container .nav_icon .stay {
   position: relative;
+}
+
+.nav_container .nav_icon .heart {
+  margin: 10rem !important;
 }
 
 /* Media Queries */

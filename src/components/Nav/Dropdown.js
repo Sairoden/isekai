@@ -48,9 +48,6 @@ export const lifestyleNav = (
       </Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/collections/nsfw-anime-merch">NSFW</Link>
-    </Menu.Item>
-    <Menu.Item>
       <Link to="/collections/kawaii-livestyle-accessories">Kawaii</Link>
     </Menu.Item>
     <Menu.Item>
@@ -58,9 +55,6 @@ export const lifestyleNav = (
     </Menu.Item>
     <Menu.Item>
       <Link to="/collections/japanese-waifu-shirts-and-hoodies">Waifu</Link>
-    </Menu.Item>
-    <Menu.Item>
-      <Link to="/collections/anime-weeb-cosplay-accessories">Cosplay</Link>
     </Menu.Item>
   </Menu>
 );
@@ -93,40 +87,16 @@ export const byAnimeNav = (
       <Link to="/collections/all-anime-merch">All Anime Merch</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/collections/attack-on-titan-anime-merch">Attack On Titan</Link>
-    </Menu.Item>
-    <Menu.Item>
-      <Link to="/collections/darling-in-the-franxx-anime-weeb-merch">
-        Darling In The Franxx
-      </Link>
-    </Menu.Item>
-    <Menu.Item>
       <Link to="/collections/demon-slayer-anime-merch">Demon Slayer</Link>
     </Menu.Item>
     <Menu.Item>
       <Link to="/collections/dragon-ball-z-anime-merch">Dragon Ball Z</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link to="/collections/hunter-x-hunter-anime-merch">Hunter X Hunter</Link>
-    </Menu.Item>
-    <Menu.Item>
-      <Link to="/collections/my-hero-academia-anime-merch">
-        My Hero Academia
-      </Link>
-    </Menu.Item>
-    <Menu.Item>
-      <Link to="/collections/my-neighbor-totoro-anime-merch">
-        My Neighbor Totoro
-      </Link>
-    </Menu.Item>
-    <Menu.Item>
       <Link to="/collections/naruto-anime-merch">Naruto</Link>
     </Menu.Item>
     <Menu.Item>
       <Link to="/collections/one-piece-anime-merch">One Piece</Link>
-    </Menu.Item>
-    <Menu.Item>
-      <Link to="/collections/sailor-moon-anime-merch">Sailor Moon</Link>
     </Menu.Item>
   </Menu>
 );

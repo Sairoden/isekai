@@ -221,7 +221,7 @@ const Nav = () => {
           <Link to="/login">
             <UserOutlined className="nav_icon stay" />
           </Link>
-          <HeartFilled className="nav_icon stay" />
+          <HeartFilled className="nav_icon heart" />
           <IconFont type="icon-shoppingcart" className="nav_icon stay" />
         </div>
       </div>

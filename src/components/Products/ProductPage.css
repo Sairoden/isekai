@@ -17,7 +17,6 @@
   font-size: 1.2rem;
 }
 .product-price {
-    
 }
 .top_right p:first-child {
   font-weight: 600;
@@ -160,25 +159,6 @@ quadpay-widget {
   width: 25px;
   height: 25px;
   color: #53585f;
-}
-
-.shipping {
-  line-height: 2;
-  width: 100%;
-  margin: 2%;
-}
-
-.shipping p {
-  font-size: 10px;
-  letter-spacing: 0.01em;
-  margin: 0 !important;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 900;
-}
-.shipping p img {
-  width: 7%;
-  padding-right: 8px;
 }
 
 .random_product {
