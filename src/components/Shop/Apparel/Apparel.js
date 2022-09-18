@@ -5,6 +5,7 @@ import "../Shop.css";
 import { apparel } from "../../../data";
 import { Pagination, Select } from "antd";
 import { Link } from "react-router-dom";
+import React from "react";
 
 const { Option } = Select;
 
@@ -15,19 +16,19 @@ const Apparel = () => {
   const [minValue, setMinValue] = useState(0);
   const [maxValue, setMaxValue] = useState(numOnEachPage);
 
-  const filterOnChange = value => {
+  const filterOnChange = (value) => {
     if (value === "All") {
       return setData(initialState);
     } else {
       const filteredData = initialState;
-      const filter = filteredData.filter(item => {
+      const filter = filteredData.filter((item) => {
         return item.keywords.includes(value);
       });
       return setData(filter);
     }
   };
 
-  const sortByOnChange = value => {
+  const sortByOnChange = (value) => {
     if (value === "Best selling") {
       const sorting = data.sort((a, b) => {
         if (a.id < b.id) {
@@ -68,7 +69,7 @@ const Apparel = () => {
       console.log("no");
     }
   };
-  const handleChange = value => {
+  const handleChange = (value) => {
     if (value <= 1) {
       setMinValue(0);
       setMaxValue(numOnEachPage);
@@ -135,8 +136,8 @@ const Apparel = () => {
         <div className="container">
           {data &&
             data.length > 0 &&
-            data.slice(minValue, maxValue).map(item => {
-              const productUrl = item => {
+            data.slice(minValue, maxValue).map((item) => {
+              const productUrl = (item) => {
                 if (item.category === "apparel") {
                   if (item.keywords.includes("Vaporwave")) {
                     return "vaporwave-aesthetic-clothing-tees-hoodies-merch";
