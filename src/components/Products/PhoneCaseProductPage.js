@@ -8,7 +8,9 @@ import { apparel, homegoods, techAccessories } from "../../data";
 import Footer from "../Footer/Footer";
 import Card from "./Card/Card";
 
+import { Radio } from "antd";
 import { HeartOutlined } from "@ant-design/icons";
+
 import "./ProductPage.css";
 import "../Nav/Nav.css";
 import "../Shop/Shop.css";
@@ -17,6 +19,7 @@ const initialState = techAccessories;
 const AirpodCaseProductPage = () => {
   const { id } = useParams();
   const [data] = useState(initialState);
+  const [size, setSize] = useState(null);
   const [randomProduct, setRandomProduct] = useState([]);
   const [randomApparel, setRandomApparel] = useState([]);
   const [filteredProduct, setFilteredProduct] = useState([]);
@@ -31,6 +34,10 @@ const AirpodCaseProductPage = () => {
     );
   }, [id]);
 
+  const handleChange = e => {
+    setSize(e.target.value);
+  };
+
   useEffect(() => {
     setRandomProduct(
       combineProduct.sort(() => 0.5 - Math.random()).slice(0, 6)
@@ -38,7 +45,6 @@ const AirpodCaseProductPage = () => {
     const dataCopy = [...data];
     setRandomApparel(dataCopy.sort(() => 0.5 - Math.random()).slice(0, 4));
   }, [filteredProduct]);
-
   return (
     <>
       <div className="product_container">
@@ -50,10 +56,44 @@ const AirpodCaseProductPage = () => {
         <div className="right">
           <div className="top_right">
             <p>{filteredProduct.name}</p>
-            <p className="product-price">₱{filteredProduct.price}</p>
+            <p>₱{filteredProduct.price}</p>
             <p className="fourPayments">
               <quadpay-widget className="quadpay" logoColor="#1d75ec" />
             </p>
+            <div className="size_container">
+              <p className="size">Size: {size} </p>
+            </div>
+            <Radio.Group
+              className="radio_button"
+              buttonStyle="solid"
+              checked={false}
+              onChange={handleChange}
+            >
+              <Radio.Button className="phone_button" value="IPhone X">
+                IPhone X
+              </Radio.Button>
+              <Radio.Button className="phone_button" value="IPhone XS">
+                IPhone XS
+              </Radio.Button>
+              <Radio.Button className="phone_button" value="IPhone 11">
+                IPhone 11
+              </Radio.Button>
+              <Radio.Button className="phone_button" value="IPhone 11 Pro">
+                IPhone 11 Pro
+              </Radio.Button>
+              <Radio.Button className="phone_button" value="IPhone 11 Pro Max">
+                IPhone 11 Pro Max
+              </Radio.Button>
+              <Radio.Button className="phone_button" value="IPhone 12">
+                IPhone 12
+              </Radio.Button>
+              <Radio.Button className="phone_button" value="IPhone 12 Pro">
+                IPhone 12 Pro
+              </Radio.Button>
+              <Radio.Button className="phone_button" value="IPhone 12 Pro Max">
+                IPhone 12 Pro Max
+              </Radio.Button>
+            </Radio.Group>
           </div>
           <div className="cart_container">
             <Link to="/" className="cart_button">

@@ -8,20 +8,30 @@ import { apparel, homegoods, techAccessories } from "../../data";
 import Footer from "../Footer/Footer";
 import Card from "./Card/Card";
 
+import { Modal, Radio, Table } from "antd";
 import { HeartOutlined } from "@ant-design/icons";
+import {
+  columns,
+  tShirtData,
+  longTShirtData,
+  sweatshirtData,
+} from "./ModalData";
+
 import "./ProductPage.css";
 import "../Nav/Nav.css";
 import "../Shop/Shop.css";
 
-const initialState = techAccessories;
-const AirpodCaseProductPage = () => {
+const initialState = apparel;
+const ShirtProductPage = () => {
   const { id } = useParams();
   const [data] = useState(initialState);
+  const [size, setSize] = useState(null);
+  const [visible, setVisible] = useState(false);
   const [randomProduct, setRandomProduct] = useState([]);
   const [randomApparel, setRandomApparel] = useState([]);
   const [filteredProduct, setFilteredProduct] = useState([]);
 
-  const combineProduct = data.concat(homegoods).concat(apparel);
+  const combineProduct = data.concat(homegoods).concat(techAccessories);
 
   useEffect(() => {
     setFilteredProduct(
@@ -30,6 +40,10 @@ const AirpodCaseProductPage = () => {
       })
     );
   }, [id]);
+
+  const handleChange = e => {
+    setSize(e.target.value);
+  };
 
   useEffect(() => {
     setRandomProduct(
@@ -50,10 +64,76 @@ const AirpodCaseProductPage = () => {
         <div className="right">
           <div className="top_right">
             <p>{filteredProduct.name}</p>
-            <p className="product-price">₱{filteredProduct.price}</p>
+            <p>₱{filteredProduct.price}</p>
             <p className="fourPayments">
               <quadpay-widget className="quadpay" logoColor="#1d75ec" />
             </p>
+            <div className="size_container">
+              <p className="size">Size: {size} </p>
+              <div className="size_container_right">
+                📐
+                <button onClick={() => setVisible(true)}>Size Chart</button>
+                <Modal
+                  className="modal"
+                  footer={null}
+                  centered
+                  visible={visible}
+                  onCancel={() => setVisible(false)}
+                  width={1000}
+                >
+                  <div className="modal_tables" style={{ height: "500" }}>
+                    <div className="modal_table">
+                      <h2 className="modal_header"> Adult Tee Size Chart </h2>
+                      <Table
+                        columns={columns}
+                        dataSource={tShirtData}
+                        bordered
+                        pagination={false}
+                      />
+                    </div>
+                    <div className="modal_table">
+                      <h2 className="modal_header">
+                        {" "}
+                        Adult Long-Sleeve Tee Size Chart{" "}
+                      </h2>
+                      <Table
+                        columns={columns}
+                        dataSource={longTShirtData}
+                        bordered
+                        pagination={false}
+                      />
+                    </div>
+                    <div className="modal_table">
+                      <h2 className="modal_header">
+                        {" "}
+                        Adult Hooded Sweatshirt Size Chart{" "}
+                      </h2>
+                      <Table
+                        columns={columns}
+                        dataSource={sweatshirtData}
+                        bordered
+                        pagination={false}
+                      />
+                    </div>
+                  </div>
+                </Modal>
+              </div>
+            </div>
+            <Radio.Group
+              className="radio_button"
+              buttonStyle="solid"
+              checked={false}
+              onChange={handleChange}
+            >
+              <Radio.Button value="XS">XS</Radio.Button>
+              <Radio.Button value="S">S</Radio.Button>
+              <Radio.Button value="M">M</Radio.Button>
+              <Radio.Button value="L">L</Radio.Button>
+              <Radio.Button value="XL">XL</Radio.Button>
+              <Radio.Button value="1X">1X</Radio.Button>
+              <Radio.Button value="2X">2X</Radio.Button>
+              <Radio.Button value="3X">3X</Radio.Button>
+            </Radio.Group>
           </div>
           <div className="cart_container">
             <Link to="/" className="cart_button">
@@ -192,4 +272,4 @@ const AirpodCaseProductPage = () => {
   );
 };
 
-export default AirpodCaseProductPage;
+export default ShirtProductPage;

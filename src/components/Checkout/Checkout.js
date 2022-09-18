@@ -1,12 +1,12 @@
 import Footer from "../Footer/Footer";
 
-const Favorite = () => {
+const Checkout = () => {
   return (
     <>
-      <h1>Favorite</h1>;
+      <h1>Checkout</h1>;
       <Footer />
     </>
   );
 };
 
-export default Favorite;
+export default Checkout;

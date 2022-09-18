@@ -54,9 +54,23 @@ import React from "react";
 
 // Favorite Page
 import Favorite from "./components/Favorite/Favorite";
+import Checkout from "./components/Checkout/Checkout";
 
 // Products
 import AirpodCaseProductPage from "./components/Products/AirpodCaseProductPage";
+import PhoneCaseProductPage from "./components/Products/PhoneCaseProductPage";
+import CosplayProductPage from "./components/Products/CosplayProductPage";
+import HoodieProductPage from "./components/Products/HoodieProductPage";
+import KawaiiProductPage from "./components/Products/KawaiiProductPage";
+import LightProductPage from "./components/Products/LightProductPage";
+import NSFWProductPage from "./components/Products/NSFWProductPage";
+import PillowProductPage from "./components/Products/PillowProductPage";
+import SadAestheticProductPage from "./components/Products/SadAestheticProductPage";
+import SenpaiProductPage from "./components/Products/SenpaiProductPage";
+import ShirtProductPage from "./components/Products/ShirtProductPage";
+import SockProductPage from "./components/Products/SockProductPage";
+import VaporwaveProductPage from "./components/Products/VaporwaveProductPage";
+import WaifuProductPage from "./components/Products/WaifuProductPage";
 
 function App() {
   return (
@@ -174,10 +188,65 @@ function App() {
         {/* FAVORITE */}
         <Route path="/favorite" element={<Favorite />} />
 
+        {/* CHECKOUT */}
+        <Route path="/checkout" element={<Checkout />} />
+
         {/* PRODUCTS */}
         <Route
           path="/collections/anime-airpod-1-2-pro-cases/products/:id"
           element={<AirpodCaseProductPage />}
+        />
+        <Route
+          path="/collections/anime-phone-cases/products/:id"
+          element={<PhoneCaseProductPage />}
+        />
+        <Route
+          path="/collections/anime-weeb-cosplay-accessories/products/:id"
+          element={<CosplayProductPage />}
+        />
+        <Route
+          path="/collections/anime-hoodies-and-sweatshirts/products/:id"
+          element={<HoodieProductPage />}
+        />
+        <Route
+          path="/collections/kawaii-livestyle-accessories/products/:id"
+          element={<KawaiiProductPage />}
+        />
+        <Route
+          path="/collections/3d-led-anime-bedroom-lights-lamps/products/:id"
+          element={<LightProductPage />}
+        />
+        <Route
+          path="/collections/nsfw-anime-merch/products/:id"
+          element={<NSFWProductPage />}
+        />
+        <Route
+          path="/collections/anime-kawaii-cartoon-bedroom-pillows/products/:id"
+          element={<PillowProductPage />}
+        />
+        <Route
+          path="/collections/sad-aesthetic/products/:id"
+          element={<SadAestheticProductPage />}
+        />
+        <Route
+          path="/collections/japanese-senpai-shirts-and-hoodies/products/:id"
+          element={<SenpaiProductPage />}
+        />
+        <Route
+          path="/collections/anime-tee-shirts/products/:id"
+          element={<ShirtProductPage />}
+        />
+        <Route
+          path="/collections/anime-socks/products/:id"
+          element={<SockProductPage />}
+        />
+        <Route
+          path="/collections/vaporwave-aesthetic-clothing-tees-hoodies-merch/products/:id"
+          element={<VaporwaveProductPage />}
+        />
+        <Route
+          path="/collections/japanese-waifu-shirts-and-hoodies/products/:id"
+          element={<WaifuProductPage />}
         />
       </Route>
       <Route path="/" element={<Footer />} />

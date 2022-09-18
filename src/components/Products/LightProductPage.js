@@ -9,19 +9,20 @@ import Footer from "../Footer/Footer";
 import Card from "./Card/Card";
 
 import { HeartOutlined } from "@ant-design/icons";
+
 import "./ProductPage.css";
 import "../Nav/Nav.css";
 import "../Shop/Shop.css";
 
-const initialState = techAccessories;
-const AirpodCaseProductPage = () => {
+const initialState = homegoods;
+const LightProductPage = () => {
   const { id } = useParams();
   const [data] = useState(initialState);
   const [randomProduct, setRandomProduct] = useState([]);
   const [randomApparel, setRandomApparel] = useState([]);
   const [filteredProduct, setFilteredProduct] = useState([]);
 
-  const combineProduct = data.concat(homegoods).concat(apparel);
+  const combineProduct = data.concat(apparel).concat(techAccessories);
 
   useEffect(() => {
     setFilteredProduct(
@@ -50,7 +51,7 @@ const AirpodCaseProductPage = () => {
         <div className="right">
           <div className="top_right">
             <p>{filteredProduct.name}</p>
-            <p className="product-price">₱{filteredProduct.price}</p>
+            <p>₱{filteredProduct.price}</p>
             <p className="fourPayments">
               <quadpay-widget className="quadpay" logoColor="#1d75ec" />
             </p>
@@ -192,4 +193,4 @@ const AirpodCaseProductPage = () => {
   );
 };
 
-export default AirpodCaseProductPage;
+export default LightProductPage;
