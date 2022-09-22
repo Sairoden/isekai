@@ -205,7 +205,7 @@ const Nav = () => {
             </Link>
           </Dropdown>
         </nav>
-        <div className="search">
+        <div className=" search">
           <SearchOutlined
             className="search_icon"
             onClick={() => SetSearchActive((searchActive) => !searchActive)}

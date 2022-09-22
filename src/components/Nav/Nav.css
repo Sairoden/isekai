@@ -92,6 +92,10 @@
   white-space: nowrap;
   margin-right: 5%;
 }
+.nav_container .search,
+.nav_container .nav_icon span {
+  font-size: 1.5rem;
+}
 .nav_container .nav_icon .stay {
   position: relative;
 }

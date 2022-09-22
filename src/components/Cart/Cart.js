@@ -3,7 +3,7 @@ import { CloseCircleOutlined } from "@ant-design/icons";
 
 import OnClickOutside from "./hook/OnClickOutside";
 import "./../css/CartStyle.css";
-import { ShoppingCartOutlined } from "@material-ui/icons";
+import { ShoppingCartOutlined } from "@ant-design/icons";
 
 const Cart = ({ isCartToggle, setCartToggle }) => {
   // control for clicking outside the layer
