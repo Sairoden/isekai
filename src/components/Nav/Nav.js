@@ -21,6 +21,7 @@ import {
 import { SearchInput } from "./Style";
 // import { apparel, homegoods, techAccessories } from "../../data.js";
 import { useNavigate } from "react-router-dom";
+import Cart from "../Cart/Cart";
 
 // const combineProduct = apparel.concat(homegoods).concat(techAccessories);
 
@@ -37,7 +38,7 @@ const Nav = () => {
   const [searchActive, SetSearchActive] = useState(false);
   const [visible, setVisible] = useState(false);
 
-  const onSearch = e => {
+  const onSearch = (e) => {
     // const filtered = combineProduct.filter(item =>
     //   item.name.toLowerCase().includes(e.toLowerCase())
     // );
@@ -52,10 +53,11 @@ const Nav = () => {
     setVisible(false);
   };
 
-  const search = e => {
+  const search = (e) => {
     e.preventDefault();
   };
-
+  // toggle cart function
+  const [ToggleCart, setToggleCart] = useState(false);
   return (
     <>
       <div className="nav_container" id="product">
@@ -203,10 +205,10 @@ const Nav = () => {
             </Link>
           </Dropdown>
         </nav>
-        <div className="search">
+        <div className=" search">
           <SearchOutlined
             className="search_icon"
-            onClick={() => SetSearchActive(searchActive => !searchActive)}
+            onClick={() => SetSearchActive((searchActive) => !searchActive)}
           />
           <SearchInput
             className="searchInput"
@@ -224,10 +226,9 @@ const Nav = () => {
           <Link to="/favorite" className="nav_icon heart">
             <HeartFilled />
           </Link>
-
-          <button className="nav_icon stay cart">
-            <IconFont type="icon-shoppingcart" />
-          </button>
+          <div className="nav_icon cart">
+            <Cart isCartToggle={ToggleCart} setCartToggle={setToggleCart} />
+          </div>
         </div>
       </div>
       <Outlet />

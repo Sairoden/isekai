@@ -2,6 +2,8 @@ import { useState } from "react";
 // import { Link } from "react-router-dom";
 
 import "./Home.css";
+import "../css/style.css";
+
 import mainCover from "../../assets/Home/main-cover.webp";
 import tShirt from "../../assets/Home/ghost-fighter.webp";
 import accessories from "../../assets/Home/accessories.webp";

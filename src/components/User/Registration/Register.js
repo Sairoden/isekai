@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import { RegisterSchema } from "../../schemas";
 import axios from "axios";
-import "../../css/style.css";
 // icon
 import {
   CloseCircleOutlined,
