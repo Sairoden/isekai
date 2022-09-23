@@ -1,11 +1,17 @@
-import React, { useRef, useContext, useEffect } from "react";
+import React, { useRef, useContext, useState } from "react";
 import { CloseCircleOutlined } from "@ant-design/icons";
 
 import OnClickOutside from "./hook/OnClickOutside";
 import "./../css/CartStyle.css";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 
+import CartItem from "./CartItem/CartItem";
+
+import { CartContext } from "../Context/CartContext";
+
 const Cart = ({ isCartToggle, setCartToggle }) => {
+  const { cartItems, cartTotal } = useContext(CartContext);
+
   // control for clicking outside the layer
   const $sideBarRef = useRef();
   OnClickOutside($sideBarRef, () => setCartToggle(false));
@@ -30,7 +36,19 @@ const Cart = ({ isCartToggle, setCartToggle }) => {
             Cart
             <CloseCircleOutlined onClick={() => setCartToggle(false)} />
           </div>
-          <div className="empty">Empty cart</div>
+          <div className="cart-items">
+            {cartItems.length ? (
+              <div>
+                {cartItems.map(item => (
+                  <CartItem key={item.id} cartItem={item} />
+                ))}
+                <div>Total: {cartTotal}</div>
+                <button>CHECKOUT</button>
+              </div>
+            ) : (
+              <div className="empty">Empty cart</div>
+            )}
+          </div>
         </div>
       </div>
     </>

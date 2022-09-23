@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable eqeqeq */
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -21,6 +21,8 @@ import "./ProductPage.css";
 import "../Nav/Nav.css";
 import "../Shop/Shop.css";
 
+import { CartContext } from "../Context/CartContext";
+
 const initialState = apparel;
 const HoodieProductPage = () => {
   const { id } = useParams();
@@ -32,6 +34,9 @@ const HoodieProductPage = () => {
   const [filteredProduct, setFilteredProduct] = useState([]);
 
   const combineProduct = data.concat(homegoods).concat(techAccessories);
+
+  const { addItemToCart } = useContext(CartContext);
+  const addProductToCart = () => addItemToCart(filteredProduct);
 
   useEffect(() => {
     setFilteredProduct(
@@ -136,9 +141,9 @@ const HoodieProductPage = () => {
             </Radio.Group>
           </div>
           <div className="cart_container">
-            <Link to="/" className="cart_button">
+            <button onClick={addProductToCart} className="cart_button">
               ADD TO CART
-            </Link>
+            </button>
             <button className="heart_button">
               <HeartOutlined className="heart" />
             </button>
