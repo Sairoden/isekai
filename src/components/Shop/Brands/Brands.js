@@ -37,6 +37,7 @@ const initialState = combineProduct.sort((a, b) => {
   }
   return 0;
 });
+
 const ByAnime = () => {
   const numOnEachPage = 18;
   const [data, setData] = useState(initialState);
