@@ -15,6 +15,7 @@ import "../Nav/Nav.css";
 import "../Shop/Shop.css";
 
 import { CartContext } from "../Context/CartContext";
+import { WishListContext } from "../Context/WishListContext";
 
 const initialState = homegoods;
 const PillowProductPage = () => {
@@ -28,6 +29,9 @@ const PillowProductPage = () => {
 
   const { addItemToCart } = useContext(CartContext);
   const addProductToCart = () => addItemToCart(filteredProduct);
+
+  const { addItemToWishList } = useContext(WishListContext);
+  const addProductToWishList = () => addItemToWishList(filteredProduct);
 
   useEffect(() => {
     setFilteredProduct(
@@ -65,7 +69,7 @@ const PillowProductPage = () => {
             <button onClick={addProductToCart} className="cart_button">
               ADD TO CART
             </button>
-            <button className="heart_button">
+            <button onClick={addProductToWishList} className="heart_button">
               <HeartOutlined className="heart" />
             </button>
           </div>

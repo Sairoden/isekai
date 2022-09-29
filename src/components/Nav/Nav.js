@@ -77,7 +77,8 @@ const Nav = () => {
           navigate("/collections/kawaii-livestyle-accessories");
         else if (search.includes("Nsf"))
           navigate("/collections/nsfw-anime-merch");
-        else if (search.includes("Sad")) navigate("/collections/sad-aesthetic");
+        else if (search.includes("Sad") || search.includes("Aes"))
+          navigate("/collections/sad-aesthetic");
         else if (search.includes("Sen"))
           navigate("/collections/japanese-senpai-shirts-and-hoodies");
         else if (search.includes("Vap"))
@@ -98,7 +99,7 @@ const Nav = () => {
           navigate("/collections/attack-on-titan-anime-merch");
         else if (search.includes("Dar"))
           navigate("/collections/darling-in-the-franxx-anime-weeb-merch");
-        else if (search.includes("Dem"))
+        else if (search.includes("Dem") || search.includes("Sla"))
           navigate("/collections/demon-slayer-anime-merch");
         else if (search.includes("Drag") || search.includes("Ball"))
           navigate("/collections/dragon-ball-z-anime-merch");
