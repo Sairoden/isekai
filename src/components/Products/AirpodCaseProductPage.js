@@ -14,6 +14,7 @@ import "../Nav/Nav.css";
 import "../Shop/Shop.css";
 
 import { CartContext } from "../Context/CartContext";
+import React from "react";
 
 const initialState = techAccessories;
 
@@ -31,7 +32,7 @@ const AirpodCaseProductPage = () => {
 
   useEffect(() => {
     setFilteredProduct(
-      data.find(item => {
+      data.find((item) => {
         return item.id == id;
       })
     );
@@ -77,8 +78,8 @@ const AirpodCaseProductPage = () => {
         <p>Customers who brought this item also brought</p>
 
         <div className="container">
-          {randomProduct.map(item => {
-            const productUrl = item => {
+          {randomProduct.map((item) => {
+            const productUrl = (item) => {
               if (item.category === "apparel") {
                 if (item.keywords.includes("Vaporwave")) {
                   return "vaporwave-aesthetic-clothing-tees-hoodies-merch";
@@ -138,8 +139,8 @@ const AirpodCaseProductPage = () => {
         <p>Customers who viewed this item also viewed</p>
 
         <div className="container">
-          {randomApparel.map(item => {
-            const productUrl = item => {
+          {randomApparel.map((item) => {
+            const productUrl = (item) => {
               if (item.category === "apparel") {
                 if (item.keywords.includes("Vaporwave")) {
                   return "vaporwave-aesthetic-clothing-tees-hoodies-merch";

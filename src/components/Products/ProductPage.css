@@ -1,35 +1,34 @@
 .product_container {
-  margin: 2%;
+  width: 80%;
+  margin: 5% auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-.product_image {
+.product_container .product_image {
   width: 35%;
 }
-.right {
+.product_container .right {
   margin: 1%;
-  width: 18.3%;
+  width: 35%;
 }
-.top_right p {
+.product_container .top_right p {
   letter-spacing: 0.1em;
   color: #53585f;
   font-size: 1.2rem;
 }
-.product-price {
-}
-.top_right p:first-child {
+.product_container .top_right p:first-child {
   font-weight: 600;
 }
-.top_right p:nth-child(2) {
+.product_container .top_right p:nth-child(2) {
   font-weight: 700;
 }
-.top_right .fourPayments {
+.product_container .top_right .fourPayments {
   font-size: 1rem;
   letter-spacing: 0.03em;
 }
 
-.top_right .fourPayments span {
+.product_container .top_right .fourPayments span {
   font-weight: 700;
 }
 
@@ -37,19 +36,19 @@ quadpay-widget {
   font-size: 0.8rem;
 }
 
-.top_right .size {
+.product_container .top_right .size {
   font-size: 1rem;
 }
 
-.top_right .size_container {
+.product_container .top_right .size_container {
   display: flex;
   justify-content: space-between;
 }
-.top_right .size_container img {
+.product_container .top_right .size_container img {
   width: 25%;
 }
 
-.top_right .size_container .size_container_right {
+.product_container .top_right .size_container .size_container_right {
   display: flex;
   justify-content: space-between;
   width: 110px;
@@ -57,7 +56,7 @@ quadpay-widget {
   text-align: center;
 }
 
-.top_right .size_container .size_container_right button {
+.product_container .top_right .size_container .size_container_right button {
   background: none;
   border: none;
   cursor: pointer;
@@ -75,56 +74,63 @@ quadpay-widget {
   margin: 5%;
 }
 
-.ant-modal-content .ant-modal-body .modal_header {
+.product_container .ant-modal-content .ant-modal-body .modal_header {
   text-align: center;
   margin-top: 1%;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
-.ant-table-thead > tr > th {
+.product_container .ant-table-thead > tr > th {
   background: #000000;
   color: #ffffff;
 }
 
-.ant-table-content .ant-table-tbody .ant-table-row .ant-table-cell:first-child {
+.product_container
+  .ant-table-content
+  .ant-table-tbody
+  .ant-table-row
+  .ant-table-cell:first-child {
   font-weight: 500;
 }
 
-.top_right .radio_button {
+.product_container .top_right .radio_button {
   width: 334px;
 }
 
-.ant-radio-button-wrapper {
+.product_container .ant-radio-button-wrapper {
   margin: 1%;
   width: 60px;
   text-align: center;
 }
-.phone_button {
+.product_container .phone_button {
   width: 150px;
 }
-.ant-radio-button-wrapper:hover {
+.product_container .ant-radio-button-wrapper:hover {
   color: #000000;
 }
-.ant-radio-button-wrapper .ant-radio-button-checked {
+.product_container .ant-radio-button-wrapper .ant-radio-button-checked {
   background: #000000;
   border: #53585f;
 }
-.ant-radio-button-wrapper .ant-radio-button-checked:hover {
+.product_container .ant-radio-button-wrapper .ant-radio-button-checked:hover {
   color: #ffffff;
 }
-.ant-radio-group-solid
+.product_container
+  .ant-radio-group-solid
   .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
   background: #53585f !important;
   border-color: #ffffff !important;
 }
-.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover::before {
+.product_container
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover::before {
   background: none;
 }
-.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+.product_container
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
   background: none;
 }
 
-.cart_container {
+.product_container .cart_container {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -132,7 +138,7 @@ quadpay-widget {
   margin-top: 5%;
 }
 
-.cart_container .cart_button {
+.product_container .cart_container .cart_button {
   background: #000000;
   color: #ffffff;
   padding: 3%;
@@ -143,76 +149,67 @@ quadpay-widget {
   cursor: pointer;
   letter-spacing: 1px;
 }
-.cart_container .cart_button:hover {
+.product_container .cart_container .cart_button:hover {
   background-color: transparent;
   color: #000;
 }
 
-.cart_container .heart_button {
+.product_container .cart_container .heart_button {
   width: 15%;
   background: none;
   border: 1px solid #000000;
   cursor: pointer;
 }
 
-.cart_container .heart_button svg {
+.product_container .cart_container .heart_button svg {
   width: 25px;
   height: 25px;
   color: #53585f;
 }
 
-.random_product {
-  background-color: #e4e4e4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.random_product .title {
-  font-size: 1.6rem;
-  font-family: "Knewave", cursive;
-  font-weight: 900;
-  text-align: center;
-  margin-top: 3%;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.random_product p {
-  font-family: "PT Sans", sans-serif;
-  font-size: 17px;
-  letter-spacing: 0.05em;
-  margin: 1%;
-}
-.random_product .container {
-  margin: 1%;
-}
-
+.random_product,
 .similar_products {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.similar_products .title {
-  font-size: 1.6rem;
-  font-family: "Knewave", cursive;
-  font-weight: 900;
+  padding: 5%;
   text-align: center;
-  margin-top: 3%;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
 }
-
+.random_product {
+  background-color: #f9f9f9;
+}
+.random_product .title,
+.similar_products .title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.random_product p,
 .similar_products p {
   font-family: "PT Sans", sans-serif;
   font-size: 17px;
   letter-spacing: 0.05em;
   margin: 1%;
 }
-
+.random_product .container,
 .similar_products .container {
-  margin: 1% 0 3% 0;
+  width: 80%;
+  padding: 2.5%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.random_product .container a,
+.similar_products .conatiner a {
+  width: calc(90% / 3);
+}
+.random_product .container .card,
+.similar_products .conatiner .card {
+  width: auto;
+}
+.random_product .container .card img {
+  height: 200px;
+  width: auto;
+}
+.random_product .container .card .title,
+.similar_products .container .card .title {
+  text-align: center !important;
 }
