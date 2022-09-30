@@ -1,14 +1,17 @@
 import "./FavoriteItem.css";
 
-const FavoriteItem = ({ wishListItem }) => {
-  const { name, quantity, photo, price } = wishListItem;
+const FavoriteItem = ({ wishListItem, miniTop, mini }) => {
+  const { name, photo, price } = wishListItem;
+
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
 
   return (
-    <div>
+    <div className={`favorite ${miniTop}`} id={mini}>
       <img src={photo} alt={name} />
-      <div>{name}</div>
-      <div>{quantity}</div>
-      <div>₱{price}</div>
+      <p className="title">{name}</p>
+      <p className="price">₱{numberWithCommas(price)}</p>
     </div>
   );
 };
