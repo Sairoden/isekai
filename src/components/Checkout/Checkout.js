@@ -1,11 +1,9 @@
 import React, { useRef, useContext, useState } from "react";
 import Footer from "../Footer/Footer";
-import CartItem from "../Cart/CartItem/CartItem";
 import { CartContext } from "../Context/CartContext";
 import "./../css/CartStyle.css";
 import "../css/style.css";
 import { Link } from "react-router-dom";
-import { CreditCard, Height } from "@material-ui/icons";
 
 const Checkout = () => {
   const { cartItems, cartTotal } = useContext(CartContext);
@@ -21,20 +19,26 @@ const Checkout = () => {
           
           <div className="col">
             <div><b>Items:</b></div>
-              {cartItems.map(item => (
-                <CartItem key={item.id} cartItem={item} />
-              ))}
+              <div className="row">
+                <div className="col-25"><img src="../pokemon.png" /></div>
+                <div className="col-25">Name</div>
+                <div className="col-25">Count</div>
+                <div className="col-25 right">Price</div>
+              </div>
           </div>
           
-          <div className="col right">
-            <div><b>SubTotal: ₱</b> {cartTotal}</div>
-            <div><b>Shipping fee: ₱</b> 49</div>
-            <div className="bold"><b>Total: ₱ {cartTotal+49}</b></div>
+          <div className="row">
+            <div className="col right">
+              <div><b>SubTotal: ₱</b> {cartTotal}</div>
+              <div><b>Shipping fee: ₱</b> 49</div>
+            </div>
+            <div className="col-75"><b><Link to="/">Continue Shopping</Link></b></div>
+            <div className="col-25 right bold"><b>Total: ₱ {cartTotal+49}</b></div>
           </div>
         </div>
         <div className="col-25">
-          <div className="heading col">Payment Info.</div>
           <div className="billing">
+            <div className="heading col">Payment Info.</div>
             {cartItems.length ? (
               <div>
                 <div className="col">

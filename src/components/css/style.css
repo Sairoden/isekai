@@ -121,7 +121,6 @@
 .checkout .col-25 {
   width: 25%;
   padding: 20px 20px 0 20px;
-  background-color: #f8eeec;
 }
 .contact-us .col, .checkout .col {
   width: 100%;
@@ -145,6 +144,8 @@
 .checkout .billing{
   float: left;
   clear: none;
+  background-color: #f8eeec;
+  border-style:dotted;
 }
 .checkout .label {
   font-size: large;
