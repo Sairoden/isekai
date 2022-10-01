@@ -206,7 +206,7 @@ const Register = () => {
         </form>
         <div>
           <p>
-            Already have an account?<Link to="/login">Login</Link>
+            Already have an account?<Link to="/login"> Login</Link>
           </p>
         </div>
         <div>

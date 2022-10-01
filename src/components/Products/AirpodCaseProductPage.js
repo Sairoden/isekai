@@ -9,6 +9,7 @@ import Footer from "../Footer/Footer";
 import Card from "./Card/Card";
 
 import { HeartOutlined } from "@ant-design/icons";
+
 import "./ProductPage.css";
 import "../Nav/Nav.css";
 import "../Shop/Shop.css";
@@ -31,7 +32,10 @@ const AirpodCaseProductPage = () => {
   const addProductToCart = () => addItemToCart(filteredProduct);
 
   const { addItemToWishList } = useContext(WishListContext);
-  const addProductToWishList = () => addItemToWishList(filteredProduct);
+
+  const addProductToWishList = () => {
+    return addItemToWishList(filteredProduct);
+  };
 
   useEffect(() => {
     setFilteredProduct(
@@ -70,7 +74,7 @@ const AirpodCaseProductPage = () => {
               ADD TO CART
             </button>
             <button onClick={addProductToWishList} className="heart_button">
-              <HeartOutlined className="heart" />
+              <HeartOutlined />
             </button>
           </div>
         </div>

@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   width: 400px;
+  margin-left: 2rem;
 }
 .favorite img {
   -webkit-transition: all 0.3s;

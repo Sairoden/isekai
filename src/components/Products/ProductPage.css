@@ -139,32 +139,61 @@ quadpay-widget {
 }
 
 .product_container .cart_container .cart_button {
-  background: #000000;
-  color: #ffffff;
-  padding: 3%;
+  background-color: #ffffff;
+  color: #000002;
+  border: 2px solid;
+  border-color: #000002;
+  font-weight: 400;
+
+  height: 4rem;
+  box-shadow: 5px 5px 0 0 #000002;
+  transition: transform 0.05s, box-shadow 0.05s;
+  min-width: 90px;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: normal;
+
   width: 80%;
   text-align: center;
-  border: 1px solid #000;
+  font-size: 1.5rem;
+
   transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
   letter-spacing: 1px;
 }
+
 .product_container .cart_container .cart_button:hover {
   background-color: transparent;
   color: #000;
 }
 
 .product_container .cart_container .heart_button {
-  width: 15%;
-  background: none;
-  border: 1px solid #000000;
+  background-color: #fff;
+  margin-left: 2rem;
+  height: 70px;
+  width: 75px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .product_container .cart_container .heart_button svg {
   width: 25px;
   height: 25px;
   color: #53585f;
+}
+
+.product_container .cart_container .heart_button:focus svg {
+  color: red;
+}
+
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
 }
 
 .random_product,

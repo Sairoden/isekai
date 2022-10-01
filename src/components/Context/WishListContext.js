@@ -1,16 +1,20 @@
 import { createContext, useState, useEffect } from "react";
 
-const addWishListItem = (wishListItems, productToAdd) => {
+const addWishListItem = (wishListItems, productToAdd, setToggleHeart) => {
   const existingWishListItem = wishListItems.find(
     wishListItem => wishListItem.id === productToAdd.id
   );
 
-  if (existingWishListItem)
-    return wishListItems.map(wishListItem =>
-      wishListItem.id === productToAdd.id ? { ...wishListItem } : wishListItem
-    );
+  if (existingWishListItem) {
+    setToggleHeart(false);
 
-  return [...wishListItems, { ...productToAdd }];
+    return wishListItems.filter(
+      wishListItem => wishListItem.id !== productToAdd.id
+    );
+  }
+
+  setToggleHeart(true);
+  return [...wishListItems, { ...productToAdd, toggleHeart: true }];
 };
 
 export const WishListContext = createContext({
@@ -20,12 +24,19 @@ export const WishListContext = createContext({
 
 export const WishListProvider = ({ children }) => {
   const [wishListItems, setWishListItems] = useState([]);
+  const [toggleHeart, setToggleHeart] = useState(false);
+
+  // useEffect(() => {
+  //   setWishListItems([...wishListItems, {...}]);
+  // }, [wishListItems]);
 
   const addItemToWishList = productToAdd => {
-    setWishListItems(addWishListItem(wishListItems, productToAdd));
+    setWishListItems(
+      addWishListItem(wishListItems, productToAdd, setToggleHeart)
+    );
   };
 
-  const value = { wishListItems, addItemToWishList };
+  const value = { wishListItems, addItemToWishList, toggleHeart };
   return (
     <WishListContext.Provider value={value}>
       {children}
