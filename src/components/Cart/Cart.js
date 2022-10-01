@@ -1,5 +1,6 @@
 import React, { useRef, useContext, useState } from "react";
 import { CloseCircleOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 import OnClickOutside from "./hook/OnClickOutside";
 import "./../css/CartStyle.css";
@@ -42,8 +43,8 @@ const Cart = ({ isCartToggle, setCartToggle }) => {
                 {cartItems.map(item => (
                   <CartItem key={item.id} cartItem={item} />
                 ))}
-                <div>Total: {cartTotal}</div>
-                <button>CHECKOUT</button>
+                <div>Total: ₱ {cartTotal}</div>
+                <div><b><Link to="../Checkout">CHECK OUT</Link></b></div>
               </div>
             ) : (
               <div className="empty">Empty cart</div>
