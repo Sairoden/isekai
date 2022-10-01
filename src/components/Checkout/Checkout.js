@@ -12,27 +12,54 @@ const Checkout = () => {
     <div className="checkout flex-c justify-content-center">
     {cartItems.length ? (
     <div className="row">
-      <div className="heading col">Checkout</div>
+      <div className="title col">Checkout</div>
       <div className="row">
         <div className="col-75">
-          <div className="heading col">Shopping Cart</div>
+          <div className="left col">Shopping Cart</div>
           
           <div className="col">
-            <div><b>Items:</b></div>
               <div className="row">
-                <div className="col-25"><img src="../pokemon.png" /></div>
-                <div className="col-25">Name</div>
-                <div className="col-25">Count</div>
-                <div className="col-25 right">Price</div>
+                <div  className="col-95">
+                  <div className="row">
+                    <div className="col-25 right"><b>Product</b></div>
+                    <div className="col-25"><b>Name</b></div>
+                    <div className="col-25"><b>Quantity</b></div>
+                    <div className="col-25 right"><b>Total Price</b></div>
+                  </div>
+                </div>
+                <div className="col-5">
+                  <div className="row">
+                    <div className="col"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div  className="col-95">
+                  <div className="row">
+                    <div className="col-25 right"><img src="pokemon.png" /></div>
+                    <div className="col-25">Example Name</div>
+                    <div className="col-25">
+                      <input type="number" placeholder="1" className="fit" required />
+                    </div>
+                    <div className="col-25 right">₱ 69</div>
+                  </div>
+                </div>
+                <div className="col-5">
+                  <div className="row">
+                    <div className="col right">
+                      <button type="submit" className="checkout-rmv-btn">✕</button>
+                    </div>
+                  </div>
+                </div>
               </div>
           </div>
           
           <div className="row">
             <div className="col right">
-              <div><b>SubTotal: ₱</b> {cartTotal}</div>
-              <div><b>Shipping fee: ₱</b> 49</div>
+              <div>SubTotal: ₱ {cartTotal}</div>
+              <div>Shipping fee: ₱ 49</div>
             </div>
-            <div className="col-75"><b><Link to="/">Continue Shopping</Link></b></div>
+            <div className="col-75 bold"><b><Link to="/">« Continue Shopping</Link></b></div>
             <div className="col-25 right bold"><b>Total: ₱ {cartTotal+49}</b></div>
           </div>
         </div>
@@ -58,14 +85,43 @@ const Checkout = () => {
                         </tbody>
                       </table>
                     </div>
-
                     <div className="col"> 
-                      <label> <h3><b>Account Name:</b></h3> </label>
-                      <input type="text" id="accountName" className="input" required />
+                      <label> <b>Account Name:</b> </label>
+                      <input type="text" 
+                        id="accountName"
+                        className="input" 
+                        placeholder="Juan Dela Cruz"
+                        required />
                     </div>
                     <div className="col"> 
-                      <label> <h3><b>Card Number:</b></h3> </label>
-                      <input type="text" id="cardNumber" className="input" required />
+                      <label> <b>Card Number:</b> </label>
+                      <input type="tel" 
+                      id="cardNumber"
+                      className="input" 
+                      placeholder="**** **** **** 6754"
+                      pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}"
+                      required />
+                    </div>
+                    <div className="row">
+                      <div className="col-50">
+                      </div>
+                      <div className="col-50">
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col-60">
+                        <label> <small><b>Expiration Date:</b></small> </label>
+                        <input type="month"
+                        className="input"
+                        />
+                      </div>
+                      <div className="col-40">
+                        <label> <b>CVV:</b> </label>
+                        <input type="tel" 
+                        className="input"
+                        placeholder="403" 
+                        pattern="[0-9]{3}" required/>
+                      </div>
                     </div>
                     <div className="col"> <button type="submit" className="checkout-btn">CHECKOUT</button> </div>
                   </form>
