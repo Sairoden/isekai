@@ -9,6 +9,8 @@ import {
 import { LoginSchema } from "../../schemas";
 import axios from "axios";
 
+import Nuki from "../../../assets/Extra/nuki.webp";
+
 import Footer from "../../Footer/Footer";
 
 const Login = () => {
@@ -69,6 +71,7 @@ const Login = () => {
   return (
     <>
       <div className="login">
+        <img src={Nuki} alt="Nuki" style={{ height: "5rem" }} />
         <h1 className="heading">LOGIN</h1>
         <p className="sub-heading">Please enter your e-mail and password:</p>
         <form onSubmit={formik.handleSubmit} autoComplete="true">
