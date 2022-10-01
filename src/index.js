@@ -8,6 +8,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { CartProvider } from "./components/Context/CartContext";
 import { WishListProvider } from "./components/Context/WishListContext";
+import ScrollToTop from "./ScrollToTop";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -16,6 +17,7 @@ root.render(
     <BrowserRouter>
       <CartProvider>
         <WishListProvider>
+          <ScrollToTop />
           <App />
         </WishListProvider>
       </CartProvider>
