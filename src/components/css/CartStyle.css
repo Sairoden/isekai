@@ -70,3 +70,27 @@
   transform: translate(-50%, 50%);
   font-size: 2rem;
 }
+.cart .item-wrapper {
+  padding: 10px;
+}
+.cart .items {
+  display: flex;
+  flex-direction: row;
+}
+
+.cart .items .img {
+  width: calc(90% / 3);
+  padding: 5px;
+}
+.cart .items .info {
+  padding: 5px;
+}
+.cart .total-price {
+  text-align: end;
+  margin: 10px 0;
+}
+.cart .cart-btn {
+  width: 100% !important;
+  margin: 10px 0;
+  padding-top: 10px;
+}

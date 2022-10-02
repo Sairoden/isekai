@@ -138,7 +138,8 @@ quadpay-widget {
   margin-top: 5%;
 }
 
-.product_container .cart_container .cart_button {
+.product_container .cart_container .cart_button,
+.cart .cart-btn {
   background-color: #ffffff;
   color: #000002;
   border: 2px solid;

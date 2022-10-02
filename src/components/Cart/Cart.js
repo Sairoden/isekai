@@ -39,12 +39,16 @@ const Cart = ({ isCartToggle, setCartToggle }) => {
           </div>
           <div className="cart-items">
             {cartItems.length ? (
-              <div>
-                {cartItems.map(item => (
+              <div className="item-wrapper">
+                {cartItems.map((item) => (
                   <CartItem key={item.id} cartItem={item} />
                 ))}
-                <div>Total: ₱ {cartTotal}</div>
-                <div><b><Link to="../Checkout">CHECK OUT</Link></b></div>
+                <div className="total-price">Total: ₱ {cartTotal}</div>
+                <div>
+                  <Link to="../Checkout" className="cart-btn">
+                    CHECK OUT
+                  </Link>
+                </div>
               </div>
             ) : (
               <div className="empty">Empty cart</div>
