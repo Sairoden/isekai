@@ -17,6 +17,8 @@ import "../Shop/Shop.css";
 import { CartContext } from "../Context/CartContext";
 import { WishListContext } from "../Context/WishListContext";
 
+import Accordion from "./Accordion/Accordion";
+
 const initialState = techAccessories;
 
 const AirpodCaseProductPage = () => {
@@ -77,6 +79,7 @@ const AirpodCaseProductPage = () => {
               <HeartOutlined />
             </button>
           </div>
+          <Accordion />
         </div>
       </div>
 

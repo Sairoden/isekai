@@ -24,6 +24,8 @@ import "../Shop/Shop.css";
 import { CartContext } from "../Context/CartContext";
 import { WishListContext } from "../Context/WishListContext";
 
+import Accordion from "./Accordion/Accordion";
+
 const initialState = apparel;
 const ShirtProductPage = () => {
   const { id } = useParams();
@@ -152,6 +154,7 @@ const ShirtProductPage = () => {
               <HeartOutlined className="heart" />
             </button>
           </div>
+          <Accordion />
         </div>
       </div>
 

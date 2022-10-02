@@ -17,6 +17,8 @@ import "../Shop/Shop.css";
 import { CartContext } from "../Context/CartContext";
 import { WishListContext } from "../Context/WishListContext";
 
+import Accordion from "./Accordion/Accordion";
+
 const initialState = homegoods;
 const PillowProductPage = () => {
   const { id } = useParams();
@@ -73,6 +75,7 @@ const PillowProductPage = () => {
               <HeartOutlined className="heart" />
             </button>
           </div>
+          <Accordion />
         </div>
       </div>
 

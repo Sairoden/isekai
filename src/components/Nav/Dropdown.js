@@ -78,6 +78,9 @@ export const AboutUsNav = (
     <Menu.Item>
       <Link to="/help/contact-us">Contact Us</Link>
     </Menu.Item>
+    <Menu.Item>
+      <Link to="/instruction">Wash & Care Instructions</Link>
+    </Menu.Item>
   </Menu>
 );
 

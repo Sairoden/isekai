@@ -242,3 +242,13 @@ quadpay-widget {
 .similar_products .container .card .title {
   text-align: center !important;
 }
+
+.product_container .extra {
+  margin-top: 3rem;
+}
+
+.product_container .extra .link {
+  font-size: 1.5rem;
+  /* text-decoration: underline; */
+  border-bottom: 1px solid #000002;
+}
