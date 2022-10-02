@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import {
   apparelNav,
   homegoodsNav,
@@ -22,6 +22,7 @@ import { SearchInput } from "./Style";
 import { apparel, homegoods, techAccessories } from "../../data.js";
 import Cart from "../Cart/Cart";
 import { useEffect } from "react";
+import { UserContext } from "../Context/UserContext";
 
 const products = apparel.concat(homegoods).concat(techAccessories);
 
@@ -38,6 +39,7 @@ const Nav = () => {
   const [searchActive, SetSearchActive] = useState(false);
   const [visible, setVisible] = useState(false);
   const [search, setSearch] = useState("");
+  const { user } = useContext(UserContext);
 
   const handleSearch = e => {
     e.preventDefault();
@@ -297,7 +299,10 @@ const Nav = () => {
           />
         </div>
         <div className="nav_icons">
-          <Link to="/login" className="nav_icon stay">
+          <Link
+            to={user === true ? "/profile" : "/login"}
+            className="nav_icon stay"
+          >
             <UserOutlined />
           </Link>
           <Link to="/favorite" className="nav_icon heart">

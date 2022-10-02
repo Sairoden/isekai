@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import { RegisterSchema } from "../../schemas";
@@ -11,8 +11,11 @@ import {
 } from "@ant-design/icons";
 
 import Footer from "../../Footer/Footer";
+import { UserContext } from "../../Context/UserContext";
 
 const Register = () => {
+  const { setUser } = useContext(UserContext);
+
   // forms
   let history = useNavigate();
   const formik = useFormik({
@@ -200,6 +203,7 @@ const Register = () => {
             disabled={formik.isSubmitting}
             type="submit"
             className="submit-btn"
+            onClick={() => setUser(true)}
           >
             REGISTER
           </button>
