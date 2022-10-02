@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import {
   apparelNav,
   homegoodsNav,
@@ -8,7 +8,7 @@ import {
   AboutUsNav,
 } from "./Dropdown";
 import "./Nav.css";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import { Dropdown, Drawer, Input, Menu } from "antd";
 import {
   DownOutlined,
@@ -19,11 +19,12 @@ import {
   MenuOutlined,
 } from "@ant-design/icons";
 import { SearchInput } from "./Style";
-// import { apparel, homegoods, techAccessories } from "../../data.js";
-import { useNavigate } from "react-router-dom";
+import { apparel, homegoods, techAccessories } from "../../data.js";
 import Cart from "../Cart/Cart";
+import { useEffect } from "react";
+import { UserContext } from "../Context/UserContext";
 
-// const combineProduct = apparel.concat(homegoods).concat(techAccessories);
+const products = apparel.concat(homegoods).concat(techAccessories);
 
 const IconFont = createFromIconfontCN({
   scriptUrl: [
@@ -34,16 +35,97 @@ const IconFont = createFromIconfontCN({
 const { Search } = Input;
 const { SubMenu } = Menu;
 const Nav = () => {
-  const history = useNavigate();
+  const navigate = useNavigate();
   const [searchActive, SetSearchActive] = useState(false);
   const [visible, setVisible] = useState(false);
+  const [search, setSearch] = useState("");
+  const { user } = useContext(UserContext);
 
-  const onSearch = (e) => {
-    // const filtered = combineProduct.filter(item =>
-    //   item.name.toLowerCase().includes(e.toLowerCase())
-    // );
-    history.push(`/search?q=${e}`);
+  const handleSearch = e => {
+    e.preventDefault();
+
+    if (e.target.value[0]) {
+      const words = e.target.value.replace(/(^\w{1})|(\s+\w{1})/g, letter =>
+        letter.toUpperCase()
+      );
+
+      setSearch(words);
+    } else {
+      setSearch("");
+    }
   };
+
+  useEffect(() => {
+    const keyDownHandler = event => {
+      if (event.key === "Enter" && search.length > 0) {
+        event.preventDefault();
+
+        if (search.includes("App"))
+          navigate("/collections/anime-clothing-apparel");
+        else if (search.includes("Shi"))
+          navigate("/collections/anime-tee-shirts");
+        else if (search.includes("Hoo"))
+          navigate("/collections/anime-hoodies-and-sweatshirts");
+        else if (search.includes("Soc")) navigate("/collections/anime-socks");
+        else if (search.includes("Cos"))
+          navigate("/collections/anime-weeb-cosplay-accessories");
+        else if (search.includes("Hom"))
+          navigate("/collections/anime-weeb-cosplay-accessories");
+        else if (search.includes("Lig"))
+          navigate("/collections/3d-led-anime-bedroom-lights-lamps");
+        else if (search.includes("Pil"))
+          navigate("/collections/anime-kawaii-cartoon-bedroom-pillows");
+        else if (search.includes("Kaw"))
+          navigate("/collections/kawaii-livestyle-accessories");
+        else if (search.includes("Nsf"))
+          navigate("/collections/nsfw-anime-merch");
+        else if (search.includes("Sad") || search.includes("Aes"))
+          navigate("/collections/sad-aesthetic");
+        else if (search.includes("Sen"))
+          navigate("/collections/japanese-senpai-shirts-and-hoodies");
+        else if (search.includes("Vap"))
+          navigate(
+            "/collections/vaporwave-aesthetic-clothing-tees-hoodies-merch"
+          );
+        else if (search.includes("Wai"))
+          navigate("/collections/japanese-waifu-shirts-and-hoodies");
+        else if (search.includes("Air"))
+          navigate("/collections/anime-airpod-1-2-pro-cases");
+        else if (search.includes("Pho"))
+          navigate("/collections/anime-phone-cases");
+        else if (search.includes("Tec"))
+          navigate("/collections/anime-tech-accessories");
+        else if (search.includes("Ani"))
+          navigate("/collections/all-anime-merch");
+        else if (search.includes("Att") || search.includes("Titan"))
+          navigate("/collections/attack-on-titan-anime-merch");
+        else if (search.includes("Dar"))
+          navigate("/collections/darling-in-the-franxx-anime-weeb-merch");
+        else if (search.includes("Dem") || search.includes("Sla"))
+          navigate("/collections/demon-slayer-anime-merch");
+        else if (search.includes("Drag") || search.includes("Ball"))
+          navigate("/collections/dragon-ball-z-anime-merch");
+        else if (search.includes("Hun"))
+          navigate("/collections/hunter-x-hunter-anime-merch");
+        else if (search.includes("Her") || search.includes("Acad"))
+          navigate("/collections/my-hero-academia-anime-merch");
+        else if (search.includes("Tot") || search.includes("Neigh"))
+          navigate("/collections/my-neighbor-totoro-anime-merch");
+        else if (search.includes("Nar"))
+          navigate("/collections/naruto-anime-merch");
+        else if (search.includes("One") || search.includes("Pie"))
+          navigate("/collections/one-piece-anime-merch");
+        else if (search.includes("Sail") || search.includes("Moo"))
+          navigate("/collections/sailor-moon-anime-merch");
+      }
+    };
+
+    document.addEventListener("keydown", keyDownHandler);
+
+    return () => {
+      document.removeEventListener("keydown", keyDownHandler);
+    };
+  }, [search]);
 
   const showDrawer = () => {
     setVisible(true);
@@ -53,9 +135,6 @@ const Nav = () => {
     setVisible(false);
   };
 
-  const search = (e) => {
-    e.preventDefault();
-  };
   // toggle cart function
   const [ToggleCart, setToggleCart] = useState(false);
   return (
@@ -67,7 +146,7 @@ const Nav = () => {
             <Search
               placeholder="Search"
               allowClear
-              onSearch={onSearch}
+              onSearch={handleSearch}
               style={{ width: 200 }}
             />
           </div>
@@ -205,22 +284,25 @@ const Nav = () => {
             </Link>
           </Dropdown>
         </nav>
-        <div className=" search">
+        <div className="search">
           <SearchOutlined
             className="search_icon"
-            onClick={() => SetSearchActive((searchActive) => !searchActive)}
+            onClick={() => SetSearchActive(searchActive => !searchActive)}
           />
+
           <SearchInput
             className="searchInput"
-            // value={query}
-            // onChange={({target}) => SetSearchActive(target.value)}
+            value={search}
+            onChange={handleSearch}
             placeholder="Search"
             active={searchActive}
-            onSubmit={search}
           />
         </div>
         <div className="nav_icons">
-          <Link to="/login" className="nav_icon stay">
+          <Link
+            to={user === true ? "/profile" : "/login"}
+            className="nav_icon stay"
+          >
             <UserOutlined />
           </Link>
           <Link to="/favorite" className="nav_icon heart">

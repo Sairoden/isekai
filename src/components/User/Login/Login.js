@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import {
@@ -9,9 +9,14 @@ import {
 import { LoginSchema } from "../../schemas";
 import axios from "axios";
 
+import Nuki from "../../../assets/Extra/nuki.webp";
+
 import Footer from "../../Footer/Footer";
+import { UserContext } from "../../Context/UserContext";
 
 const Login = () => {
+  const { setUser } = useContext(UserContext);
+
   let history = useNavigate();
   const formik = useFormik({
     initialValues: {
@@ -69,6 +74,7 @@ const Login = () => {
   return (
     <>
       <div className="login">
+        <img src={Nuki} alt="Nuki" style={{ height: "5rem" }} />
         <h1 className="heading">LOGIN</h1>
         <p className="sub-heading">Please enter your e-mail and password:</p>
         <form onSubmit={formik.handleSubmit} autoComplete="true">
@@ -154,6 +160,7 @@ const Login = () => {
             // disabled={formik.isSubmitting}
             type="submit"
             className="submit-btn"
+            onClick={() => setUser(true)}
           >
             LOGIN
           </button>

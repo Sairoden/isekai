@@ -9,12 +9,15 @@ import Footer from "../Footer/Footer";
 import Card from "./Card/Card";
 
 import { HeartOutlined } from "@ant-design/icons";
+
 import "./ProductPage.css";
 import "../Nav/Nav.css";
 import "../Shop/Shop.css";
 
 import { CartContext } from "../Context/CartContext";
-import React from "react";
+import { WishListContext } from "../Context/WishListContext";
+
+import Accordion from "./Accordion/Accordion";
 
 const initialState = techAccessories;
 
@@ -30,9 +33,15 @@ const AirpodCaseProductPage = () => {
   const { addItemToCart } = useContext(CartContext);
   const addProductToCart = () => addItemToCart(filteredProduct);
 
+  const { addItemToWishList } = useContext(WishListContext);
+
+  const addProductToWishList = () => {
+    return addItemToWishList(filteredProduct);
+  };
+
   useEffect(() => {
     setFilteredProduct(
-      data.find((item) => {
+      data.find(item => {
         return item.id == id;
       })
     );
@@ -66,10 +75,11 @@ const AirpodCaseProductPage = () => {
             <button onClick={addProductToCart} className="cart_button">
               ADD TO CART
             </button>
-            <button className="heart_button">
-              <HeartOutlined className="heart" />
+            <button onClick={addProductToWishList} className="heart_button">
+              <HeartOutlined />
             </button>
           </div>
+          <Accordion />
         </div>
       </div>
 
@@ -78,8 +88,8 @@ const AirpodCaseProductPage = () => {
         <p>Customers who brought this item also brought</p>
 
         <div className="container">
-          {randomProduct.map((item) => {
-            const productUrl = (item) => {
+          {randomProduct.map(item => {
+            const productUrl = item => {
               if (item.category === "apparel") {
                 if (item.keywords.includes("Vaporwave")) {
                   return "vaporwave-aesthetic-clothing-tees-hoodies-merch";
@@ -139,8 +149,8 @@ const AirpodCaseProductPage = () => {
         <p>Customers who viewed this item also viewed</p>
 
         <div className="container">
-          {randomApparel.map((item) => {
-            const productUrl = (item) => {
+          {randomApparel.map(item => {
+            const productUrl = item => {
               if (item.category === "apparel") {
                 if (item.keywords.includes("Vaporwave")) {
                   return "vaporwave-aesthetic-clothing-tees-hoodies-merch";

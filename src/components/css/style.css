@@ -1,15 +1,16 @@
 .about,
-.contact-us,
 .categories,
 .subscribe,
 .carousel,
 .profile,
 .notice,
+.checkout,
 .foot {
   margin: 0 auto;
   padding: 50px 75px;
 }
 .login,
+.contact-us,
 .register {
   padding: 50px 0;
   margin: auto;
@@ -91,37 +92,146 @@
 .about .sub-heading {
   margin: 20px 0;
 }
-/* contact us */
-.contact-us .form {
+/* contact us & checkout */
+.contact-us .form, .checkout .form {
   width: 100%;
 }
-.contact-us .row {
+.contact-us .row, .checkout .row {
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.contact-us .row:after {
+.contact-us .row:after, .checkout .row:after {
   content: "";
   display: table;
   clear: both;
 }
-.contact-us .col-50 {
+.contact-us .col-50, .checkout .col-50 {
   width: 50%;
   padding: 20px 20px 0 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.contact-us .col {
-  width: 100%;
-  padding: 20px;
+.checkout .col-95 {
+  width: 95%;
+  padding: 20px 20px 0 20px;
 }
-.contact-us .txt {
+.checkout .col-75 {
+  width: 75%;
+  padding: 20px 20px 0 20px;
+}
+.checkout .col-60 {
+  width: 60%;
+  padding: 20px 20px 0 20px;
+}
+.checkout .col-40 {
+  width: 40%;
+  padding: 20px 20px 0 20px;
+}
+.checkout .col-25 {
+  width: 25%;
+  padding: 20px 20px 0 20px;
+  font-size: large;
+}
+.checkout .col-5 {
+  width: 5%;
+  padding: 20px 20px 0 20px;
+}
+.contact-us .col, .checkout .col {
+  width: 100%;
+  padding: 20px 20px 0 20px;
+}
+.contact-us .txt, .checkout .txt {
   width: 100%;
   height: 100px;
   padding: 10px;
   resize: vertical;
+}
+.checkout .bold {
+  font-size: larger;
+}
+.checkout .fit {
+  width: 60px;
+  border-style: hidden;
+}
+.checkout .title {
+  font-size: 3rem;
+  font-family: "Knewave", cursive;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 3%;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.checkout .radio-btn {
+  float: left;
+  clear: none;
+  margin: 2px 0 0 2px;
+  height: 15px;
+}
+.checkout .billing{
+  float: left;
+  clear: none;
+  background-color: #f8eeec;
+  font-size: small;
+  height: fit-content;
+  border-style: double;
+}
+.checkout .input {
+  border-style: hidden;
+  background-color: transparent;
+}
+.checkout .label {
+  font-size: large;
+}
+.checkout .right {
+  text-align: right;
+  font-size: large;
+}
+.checkout .left {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.9rem;
+}
+.checkout-btn {
+  margin: 20px 0;
+  padding: 5px;
+  float: right;
+  font-size: small;
+  width: fit-content;
+  height: fit-content;
+  background-color: black;
+  color: #f9f9f9;
+  transition: background-color 0.3s;
+}
+.checkout-btn:hover {
+  color: black;
+  background-color: #f8f8f8;
+  border: solid;
+  border-color: #202020;
+}
+.checkout-btn:disabled {
+  opacity: 0.35;
+}
+.checkout-rmv-btn {
+  float: right;
+  color: black;
+  transition: background-color 0.3s;
+  border-style: hidden;
+  background-color: transparent;
+}
+.checkout-rmv-btn:hover {
+  color: #40a9ff;
+  border-style: hidden;
+  background-color: transparent;
+}
+.checkout-rmv-btn:disabled {
+  opacity: 0.35;
+}
+.checkout img {
+  height: 70px;
 }
 /* categories */
 .categories .row,
@@ -273,7 +383,8 @@
 }
 .login input,
 .register input,
-.contact-us input {
+.contact-us input,
+.checkout input {
   width: 100%;
   height: 40px;
   padding: 0 10px;
@@ -366,7 +477,7 @@ button.password {
   .foot .col {
     width: 50%;
   }
-  .contact-us .col-50 {
+  .contact-us .col-50, .checkout .col-50 {
     width: 100%;
   }
   .profile .col:first-child,
@@ -412,3 +523,5 @@ button.password {
     width: 500%;
   }
 }
+
+

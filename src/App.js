@@ -72,6 +72,9 @@ import SockProductPage from "./components/Products/SockProductPage";
 import VaporwaveProductPage from "./components/Products/VaporwaveProductPage";
 import WaifuProductPage from "./components/Products/WaifuProductPage";
 
+// Extra
+import Instruction from "./components/Products/Instruction/Instruction";
+
 function App() {
   return (
     <Routes>
@@ -248,6 +251,8 @@ function App() {
           path="/collections/japanese-waifu-shirts-and-hoodies/products/:id"
           element={<WaifuProductPage />}
         />
+        {/* Instruction */}
+        <Route path="/instruction" element={<Instruction />} />
       </Route>
       <Route path="/" element={<Footer />} />
     </Routes>

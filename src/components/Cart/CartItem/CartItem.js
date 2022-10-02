@@ -6,7 +6,7 @@ const CartItem = ({ cartItem, setTotalPrice }) => {
       <img src={photo} alt={name} />
       <div>{name}</div>
       <div>{quantity}</div>
-      <div>₱{price}</div>
+      <div>₱ {price}</div>
     </div>
   );
 };
