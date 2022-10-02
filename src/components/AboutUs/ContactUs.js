@@ -42,7 +42,7 @@ const ContactUs = () => {
                   <h3 className="label">Email Address</h3>
                 </label>
               </div>
-              <input type="text" id="email" className="input" required />
+              <input type="email" id="email" className="input" required />
             </div>
             <div className="col-50">
               <div>
@@ -51,7 +51,7 @@ const ContactUs = () => {
                   <h3 className="label">Order Number</h3>
                 </label>
               </div>
-              <input type="number" id="orderNum" className="input" required />
+              <input type="text" id="orderNum" className="input" required />
             </div>
           </div>
           <div className="col">
