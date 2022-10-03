@@ -7,7 +7,7 @@ const CartItem = ({ cartItem, setTotalPrice }) => {
       <div className="info">
         <div>{name}</div>
         <div>X{quantity}</div>
-        <div>₱ {price}</div>
+        <div>₱{price}</div>
       </div>
     </div>
   );

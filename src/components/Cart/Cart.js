@@ -9,9 +9,11 @@ import { ShoppingCartOutlined } from "@ant-design/icons";
 import CartItem from "./CartItem/CartItem";
 
 import { CartContext } from "../Context/CartContext";
+import { UserContext } from "../Context/UserContext";
 
 const Cart = ({ isCartToggle, setCartToggle }) => {
   const { cartItems, cartTotal } = useContext(CartContext);
+  const { user } = useContext(UserContext);
 
   // control for clicking outside the layer
   const $sideBarRef = useRef();
@@ -40,12 +42,15 @@ const Cart = ({ isCartToggle, setCartToggle }) => {
           <div className="cart-items">
             {cartItems.length ? (
               <div className="item-wrapper">
-                {cartItems.map((item) => (
+                {cartItems.map(item => (
                   <CartItem key={item.id} cartItem={item} />
                 ))}
                 <div className="total-price">Total: ₱ {cartTotal}</div>
                 <div>
-                  <Link to="../Checkout" className="cart-btn">
+                  <Link
+                    to={user ? "../Checkout" : "/login"}
+                    className="cart-btn"
+                  >
                     CHECK OUT
                   </Link>
                 </div>

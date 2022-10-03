@@ -93,21 +93,25 @@
   margin: 20px 0;
 }
 /* contact us & checkout */
-.contact-us .form, .checkout .form {
+.contact-us .form,
+.checkout .form {
   width: 100%;
 }
-.contact-us .row, .checkout .row {
+.contact-us .row,
+.checkout .row {
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.contact-us .row:after, .checkout .row:after {
+.contact-us .row:after,
+.checkout .row:after {
   content: "";
   display: table;
   clear: both;
 }
-.contact-us .col-50, .checkout .col-50 {
+.contact-us .col-50,
+.checkout .col-50 {
   width: 50%;
   padding: 20px 20px 0 20px;
   display: flex;
@@ -139,11 +143,13 @@
   width: 5%;
   padding: 20px 20px 0 20px;
 }
-.contact-us .col, .checkout .col {
+.contact-us .col,
+.checkout .col {
   width: 100%;
   padding: 20px 20px 0 20px;
 }
-.contact-us .txt, .checkout .txt {
+.contact-us .txt,
+.checkout .txt {
   width: 100%;
   height: 100px;
   padding: 10px;
@@ -171,7 +177,7 @@
   margin: 2px 0 0 2px;
   height: 15px;
 }
-.checkout .billing{
+.checkout .billing {
   float: left;
   clear: none;
   background-color: #f8eeec;
@@ -221,6 +227,7 @@
   transition: background-color 0.3s;
   border-style: hidden;
   background-color: transparent;
+  cursor: pointer;
 }
 .checkout-rmv-btn:hover {
   color: #40a9ff;
@@ -477,7 +484,8 @@ button.password {
   .foot .col {
     width: 50%;
   }
-  .contact-us .col-50, .checkout .col-50 {
+  .contact-us .col-50,
+  .checkout .col-50 {
     width: 100%;
   }
   .profile .col:first-child,
@@ -523,5 +531,3 @@ button.password {
     width: 500%;
   }
 }
-
-
