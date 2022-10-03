@@ -1,12 +1,18 @@
 import React, { useRef, useContext, useState } from "react";
 import Footer from "../Footer/Footer";
+import CartItem from "../Cart/CartItem/CartItem";
 import { CartContext } from "../Context/CartContext";
 import "./../css/CartStyle.css";
 import "../css/style.css";
 import { Link } from "react-router-dom";
 
-const Checkout = () => {
+const Checkout = (item) => {
   const { cartItems, cartTotal } = useContext(CartContext);
+
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
   return (
     <>
     <div className="checkout flex-c justify-content-center">
@@ -36,12 +42,11 @@ const Checkout = () => {
               <div className="row">
                 <div  className="col-95">
                   <div className="row">
-                    <div className="col-25 right"><img src="pokemon.png" /></div>
-                    <div className="col-25">Example Name</div>
-                    <div className="col-25">
-                      <input type="number" placeholder="1" className="fit" required />
-                    </div>
-                    <div className="col-25 right">₱ 69</div>
+                    <div className="col-25 right">
+                    <img src={item.photo} alt={item.name} /></div>
+                    <div className="col-25">{item.name}</div>
+                    <div className="col-25">{item.quantity}</div>
+                    <div className="col-25 right">₱ {item.price}</div>
                   </div>
                 </div>
                 <div className="col-5">
@@ -56,11 +61,11 @@ const Checkout = () => {
           
           <div className="row">
             <div className="col right">
-              <div>SubTotal: ₱ {cartTotal}</div>
+              <div>SubTotal: ₱ {numberWithCommas(cartTotal)}</div>
               <div>Shipping fee: ₱ 49</div>
             </div>
             <div className="col-75 bold"><b><Link to="/">« Continue Shopping</Link></b></div>
-            <div className="col-25 right bold"><b>Total: ₱ {cartTotal+49}</b></div>
+            <div className="col-25 right bold"><b>Total: ₱ {numberWithCommas(cartTotal+49)}</b></div>
           </div>
         </div>
         <div className="col-25">
@@ -86,7 +91,7 @@ const Checkout = () => {
                       </table>
                     </div>
                     <div className="col"> 
-                      <label> <b>Account Name:</b> </label>
+                      <label> <h3><b>Account Name:</b></h3> </label>
                       <input type="text" 
                         id="accountName"
                         className="input" 
@@ -94,19 +99,13 @@ const Checkout = () => {
                         required />
                     </div>
                     <div className="col"> 
-                      <label> <b>Card Number:</b> </label>
+                      <label> <h3><b>Card Number:</b></h3> </label>
                       <input type="tel" 
                       id="cardNumber"
                       className="input" 
                       placeholder="**** **** **** 6754"
                       pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}"
                       required />
-                    </div>
-                    <div className="row">
-                      <div className="col-50">
-                      </div>
-                      <div className="col-50">
-                      </div>
                     </div>
                     <div className="row">
                       <div className="col-60">
