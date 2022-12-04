@@ -1,25 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../Footer/Footer";
+import { UserContext } from "../../Context/UserContext";
 
 const Profile = () => {
-  // const [FirstName, setFirstName] = useState("");
-  // useEffect(() => {
-  //   let fName = localStorage.getItem("FirstName");
-  //   setFirstName(fName);
-  // }, []);
-  // const [LastName, setLastName] = useState("");
-  // useEffect(() => {
-  //   let lName = localStorage.getItem("LastName");
-  //   setLastName(lName);
-  // }, []);
+  const { setUser, firstName, lastName } = useContext(UserContext);
+
   return (
     <>
       <div className="profile">
         <div className="heading">My Account</div>
         <div className="sub-heading text-center">
           Welcome Back!
-          {/* <span>{FirstName + " " + LastName}</span> */}
+          <span>{" " + firstName + " " + lastName}</span>
         </div>
         <div className="body">
           <div className="row ">
@@ -36,6 +29,9 @@ const Profile = () => {
             </div>
           </div>
         </div>
+        <button onClick={() => setUser(false)} className="submit-btn">
+          LOG OUT
+        </button>
       </div>
       <Footer />
     </>
