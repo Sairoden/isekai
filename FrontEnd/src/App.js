@@ -80,10 +80,12 @@ function App() {
     <Routes>
       <Route path="/" element={<Nav />}>
         <Route index element={<Home />} />
+
         {/* USER */}
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
+
         {/* APPAREL */}
         <Route
           path="/collections/anime-clothing-apparel"
@@ -99,6 +101,7 @@ function App() {
           path="/collections/anime-weeb-cosplay-accessories"
           element={<Cosplay />}
         />
+
         {/* HOMEGOODS */}
         <Route path="/collections/anime-homegoods" element={<Homegoods />} />
         <Route
@@ -109,6 +112,7 @@ function App() {
           path="/collections/anime-kawaii-cartoon-bedroom-pillows"
           element={<Pillows />}
         />
+
         {/* COLLECTIONS */}
         <Route
           path="/collections/kawaii-livestyle-accessories"
@@ -128,6 +132,7 @@ function App() {
           path="/collections/japanese-waifu-shirts-and-hoodies"
           element={<Waifu />}
         />
+
         {/* TECH ACCESSORIES */}
         <Route
           path="/collections/anime-airpod-1-2-pro-cases"
@@ -178,15 +183,19 @@ function App() {
           path="/collections/sailor-moon-anime-merch"
           element={<SailorMoon />}
         />
+
         {/* ABOUT US */}
         <Route path="/help/about-us" element={<AboutUs />} />
         <Route path="/help/contact-us" element={<ContactUs />} />
+
         {/* FAVORITE */}
         <Route path="/favorite" element={<Favorite />} />
+
         {/* CHECKOUT */}
-        {/* <Route path="/checkout" element={<Checkout />} /> */}
+        <Route path="/checkout" element={<Checkout />} />
+
         {/* PRODUCTS */}
-        {/* <Route
+        <Route
           path="/collections/anime-airpod-1-2-pro-cases/products/:id"
           element={<AirpodCaseProductPage />}
         />
@@ -241,7 +250,7 @@ function App() {
         <Route
           path="/collections/japanese-waifu-shirts-and-hoodies/products/:id"
           element={<WaifuProductPage />}
-        /> */}
+        />
         {/* Instruction */}
         <Route path="/instruction" element={<Instruction />} />
       </Route>
