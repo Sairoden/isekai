@@ -1,58 +1,48 @@
 import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
-import { RegisterSchema } from "../../schemas";
-import axios from "axios";
-// icon
 import {
   CloseCircleOutlined,
   EyeInvisibleOutlined,
   EyeOutlined,
 } from "@ant-design/icons";
+import { LoginSchema } from "../../schemas";
+import axios from "axios";
+
+import Nuki from "../../../assets/Extra/nuki.webp";
 
 import Footer from "../../Footer/Footer";
 import { UserContext } from "../../Context/UserContext";
 
-const Register = () => {
-  const { setUser, setFirstName, setLastName } = useContext(UserContext);
+const Login = () => {
+  const { setUser } = useContext(UserContext);
 
-  // const register = () => {
-  //   axios
-  //     .post("http://localhost:3001/register", {
-  //       first_name: firstNameReg,
-  //       last_name: lastNameReg,
-  //       email: emailReg,
-  //       password: passwordReg,
-  //     })
-  //     .then(response => {
-  //       console.log(response);
-  //     });
-  // };
-
-  // forms
   let history = useNavigate();
   const formik = useFormik({
     initialValues: {
-      firstname: "",
-      lastname: "",
       email: "",
       password: "",
     },
-    validationSchema: RegisterSchema,
-
+    validationSchema: LoginSchema,
     onSubmit: data => {
-      axios
-        .post("http://localhost:3001/register", {
-          firstname: data.firstname,
-          lastname: data.lastname,
-          email: data.email,
-          password: data.password,
-        })
-        .then(response => {
-          setFirstName(data.firstname);
-          setLastName(data.lastname);
-          setUser(true);
-          alert("Register Successful!");
+      // check if its working
+      // console.log("Form Date", data);
+      // alert(JSON.stringify(values, null, 2));
+      const url = "http://localhost/reactjs/login.php";
+      axios({
+        method: "post",
+        url: url,
+        headers: { "Content-Type": "multipart/form-data" },
+        data: data,
+      })
+        .then(function (response) {
+          window.localStorage.setItem("FirstName", response.data.firstname);
+          window.localStorage.setItem("LastName", response.data.lastname);
+          window.localStorage.setItem("Email", response.data.email);
+          console.log(response.data);
+          // console.log(response);
+          alert("Login successful.");
+          // history(`/login`);
         })
         .catch(error => {
           console.log(error);
@@ -60,10 +50,7 @@ const Register = () => {
         });
     },
   });
-
-  // check if its working
-  // console.log(formik.values);
-
+  // console.log(formik);
   // show/hide password
   const [PasswordType, setPasswordType] = useState("password");
   function togglePasswordType() {
@@ -74,24 +61,28 @@ const Register = () => {
     }
   }
 
-  // show/hide unsuccessful registration
+  // show/hide unsuccessful login
   const [WarningSign, setWarningSign] = useState(false);
   function toggleWarningSign() {
     if (WarningSign) {
       setWarningSign(false);
     }
+    if (formik.touched.email || formik.touched.password) {
+      setWarningSign(false);
+    }
   }
   return (
     <>
-      <div className="register">
-        <h1 className="heading">Register</h1>
-        <p className="sub-heading">Please fill in the information below:</p>
-        <form method="POST" onSubmit={formik.handleSubmit}>
+      <div className="login">
+        <img src={Nuki} alt="Nuki" style={{ height: "5rem" }} />
+        <h1 className="heading">LOGIN</h1>
+        <p className="sub-heading">Please enter your e-mail and password:</p>
+        <form onSubmit={formik.handleSubmit} autoComplete="true">
           {/* error message */}
           {WarningSign ? (
             <div className={WarningSign ? "show" : "hide"}>
               <div className="error-msg">
-                <h3>Registration not successful</h3>
+                <h3>Login not successful</h3>
                 <button type="button" onClick={toggleWarningSign}>
                   <CloseCircleOutlined style={{ fontSize: "20px" }} />
                 </button>
@@ -100,63 +91,15 @@ const Register = () => {
           ) : (
             ""
           )}
+          {/* email */}
           <div className="bundle">
             <div>
-              {/* first name */}
-              <label htmlFor="first-name">
-                <h3 className="label">First Name:</h3>
-              </label>
-            </div>
-            <input
-              type="text"
-              id="firstname"
-              className={
-                formik.errors.firstname && formik.touched.firstname
-                  ? "input-error"
-                  : ""
-              }
-              value={formik.values.firstname}
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              onClick={toggleWarningSign}
-            />
-            {formik.errors.firstname && formik.touched.firstname && (
-              <p className="error">{formik.errors.firstname}</p>
-            )}
-          </div>
-          <div className="bundle">
-            <div>
-              {/* last name */}
-              <label htmlFor="last-name">
-                <h3 className="label">LastName:</h3>
-              </label>
-            </div>
-            <input
-              type="text"
-              id="lastname"
-              className={
-                formik.errors.lastname && formik.touched.lastname
-                  ? "input-error"
-                  : ""
-              }
-              value={formik.values.lastname}
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              onClick={toggleWarningSign}
-            />
-            {formik.errors.lastname && formik.touched.lastname && (
-              <p className="error">{formik.errors.lastname}</p>
-            )}
-          </div>
-          <div className="bundle">
-            <div>
-              {/* email */}
               <label htmlFor="email">
                 <h3 className="label">Email</h3>
               </label>
             </div>
             <input
-              type="email"
+              type="text"
               id="email"
               className={
                 formik.errors.email && formik.touched.email ? "input-error" : ""
@@ -164,14 +107,15 @@ const Register = () => {
               value={formik.values.email}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
+              onClick={toggleWarningSign}
             />
-            {formik.errors.email && formik.touched.email && (
+            {formik.errors.email && formik.touched && (
               <p className="error">{formik.errors.email}</p>
             )}
           </div>
+          {/* password */}
           <div className="bundle">
             <div>
-              {/* password */}
               <label htmlFor="password">
                 <h3 className="label">Password</h3>
               </label>
@@ -188,7 +132,11 @@ const Register = () => {
                 value={formik.values.password}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
+                onClick={toggleWarningSign}
               />
+              {formik.errors.password && formik.touched.password && (
+                <p className="error">{formik.errors.password}</p>
+              )}
               <button
                 type="button"
                 className="password"
@@ -206,22 +154,20 @@ const Register = () => {
                   />
                 )}
               </button>
-              {formik.errors.password && formik.touched.password && (
-                <p className="error">{formik.errors.password}</p>
-              )}
             </div>
           </div>
           <button
-            disabled={formik.isSubmitting}
+            // disabled={formik.isSubmitting}
             type="submit"
             className="submit-btn"
+            onClick={() => setUser(true)}
           >
-            REGISTER
+            LOGIN
           </button>
         </form>
         <div>
           <p>
-            Already have an account?<Link to="/login"> Login</Link>
+            Don't have an account? <Link to="/register">Create One</Link>
           </p>
         </div>
       </div>
@@ -230,4 +176,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;
