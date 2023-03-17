@@ -17,7 +17,6 @@ import { UserContext } from "../../Context/UserContext";
 const Login = () => {
   const { setUser, setFirstName, setLastName } = useContext(UserContext);
 
-  let history = useNavigate();
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -26,13 +25,13 @@ const Login = () => {
     validationSchema: LoginSchema,
     onSubmit: data => {
       axios
-        .post("http://localhost:3001/login", {
+        .post("http://localhost:8000/api/login", {
           email: data.email,
           password: data.password,
         })
         .then(response => {
-          setFirstName(response.data[0].first_name);
-          setLastName(response.data[0].last_name);
+          setFirstName(response.data.firstName);
+          setLastName(response.data.lastName);
           setUser(true);
 
           alert("Login Successful!");
@@ -43,7 +42,7 @@ const Login = () => {
         });
     },
   });
-  // console.log(formik);
+
   // show/hide password
   const [PasswordType, setPasswordType] = useState("password");
   function togglePasswordType() {

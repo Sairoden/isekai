@@ -30,7 +30,6 @@ const Register = () => {
   // };
 
   // forms
-  let history = useNavigate();
   const formik = useFormik({
     initialValues: {
       firstname: "",
@@ -42,13 +41,14 @@ const Register = () => {
 
     onSubmit: data => {
       axios
-        .post("http://localhost:3001/register", {
-          firstname: data.firstname,
-          lastname: data.lastname,
+        .post("http://localhost:8000/api/register", {
+          firstName: data.firstname,
+          lastName: data.lastname,
           email: data.email,
           password: data.password,
         })
         .then(response => {
+          console.log(response);
           setFirstName(data.firstname);
           setLastName(data.lastname);
           setUser(true);
@@ -61,10 +61,6 @@ const Register = () => {
     },
   });
 
-  // check if its working
-  // console.log(formik.values);
-
-  // show/hide password
   const [PasswordType, setPasswordType] = useState("password");
   function togglePasswordType() {
     if (PasswordType === "password") {
